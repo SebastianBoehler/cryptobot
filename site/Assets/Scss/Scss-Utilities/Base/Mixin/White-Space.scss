@@ -1,0 +1,23 @@
+
+
+// -------------------- White Space -------------------- //
+
+@mixin white-space-normal() {
+    white-space: normal;
+}
+
+@mixin white-space-nowrap() {
+    white-space: nowrap;
+}
+
+@mixin white-space-pre() {
+    white-space: pre;
+}
+
+@mixin white-space-pre-line() {
+    white-space: pre-line;
+}
+
+@mixin white-space-pre-wrap() {
+    white-space: pre-wrap;
+}

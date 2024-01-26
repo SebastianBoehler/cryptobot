@@ -1,0 +1,17 @@
+﻿[
+  // ---------- Scss Master ---------- //
+
+  // Master - Desktop - Default
+
+  {
+    "outputFile": "Assets/Css/Css-Master.css",
+    "inputFile": "Assets/Scss/Scss-Master/Scss-Master.scss"
+  },
+
+  // Master - Desktop - Min
+
+  {
+    "outputFile": "Assets/Css/Css-Master.min.css",
+    "inputFile": "Assets/Scss/Scss-Master/Scss-Master.scss"
+  }
+]

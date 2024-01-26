@@ -1,0 +1,27 @@
+
+
+// -------------------- Transform -------------------- //
+
+@mixin text-transform-capitalize() {
+    text-transform: capitalize;
+}
+
+@mixin text-transform-full-width() {
+    text-transform: full-width;
+}
+
+@mixin text-transform-fullsize-kana() {
+    text-transform: fullsize-kana;
+}
+
+@mixin text-transform-lowercase() {
+    text-transform: lowercase;
+}
+
+@mixin text-transform-none() {
+    text-transform: none;
+}
+
+@mixin text-transform-uppercase() {
+    text-transform: uppercase;
+}

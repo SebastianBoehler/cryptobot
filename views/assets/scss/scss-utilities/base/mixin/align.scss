@@ -1,0 +1,134 @@
+
+
+// -------------------- Text Align -------------------- //
+
+@mixin text-align-center() {
+    text-align: center;
+}
+
+@mixin text-align-end() {
+    text-align: end;
+}
+
+@mixin text-align-justify() {
+    text-align: justify;
+}
+
+@mixin text-align-left() {
+    text-align: left;
+}
+
+@mixin text-align-match-parent() {
+    text-align: match-parent;
+}
+
+@mixin text-align-right() {
+    text-align: right;
+}
+
+@mixin text-align-start() {
+    text-align: start;
+}
+
+// -------------------- Vertical Align -------------------- //
+
+@mixin vertical-align-auto() {
+    vertical-align: auto;
+}
+
+@mixin vertical-align-baseline() {
+    vertical-align: baseline;
+}
+
+@mixin vertical-align-bottom() {
+    vertical-align: bottom;
+}
+
+@mixin vertical-align-middle() {
+    vertical-align: middle;
+}
+
+@mixin vertical-align-sub() {
+    vertical-align: sub;
+}
+
+@mixin vertical-align-super() {
+    vertical-align: super;
+}
+
+@mixin vertical-align-text-bottom() {
+    vertical-align: text-bottom;
+}
+
+@mixin vertical-align-text-top() {
+    vertical-align: text-top;
+}
+
+@mixin vertical-align-top() {
+    vertical-align: top;
+}
+
+@mixin vertical-align-use-script() {
+    vertical-align: use-script;
+}
+
+// -------------------- Align Items -------------------- //
+
+@mixin align-items-baseline() {
+    align-items: baseline;
+}
+
+@mixin align-items-center() {
+    align-items: center;
+}
+
+@mixin align-items-flex-end() {
+    align-items: flex-end;
+}
+
+@mixin align-items-flex-start() {
+    align-items: flex-start;
+}
+
+@mixin align-items-stretch() {
+    align-items: stretch;
+}
+
+@mixin align-items-initial() {
+    align-items: initial;
+}
+
+@mixin align-items-inherit() {
+    align-items: inherit;
+}
+
+
+// -------------------- Align Self -------------------- //
+
+@mixin align-self-baseline() {
+    align-self: baseline;
+}
+
+@mixin align-self-center() {
+    align-self: center;
+}
+
+@mixin align-self-flex-end() {
+    align-self: flex-end;
+}
+
+@mixin align-self-flex-start() {
+    align-self: flex-start;
+}
+
+@mixin align-self-stretch() {
+    align-self: stretch;
+}
+
+@mixin align-self-initial() {
+    align-self: initial;
+}
+
+@mixin align-self-inherit() {
+    align-self: inherit;
+}

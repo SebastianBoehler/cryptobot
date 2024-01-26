@@ -1,0 +1,11 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Border -------------------- //
+
+.border-quarter {
+    border          : 1px solid $c-quarter-normal !important;
+}

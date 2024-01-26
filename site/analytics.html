@@ -1,0 +1,1119 @@
+﻿<!--<!DOCTYPE html>-->
+
+<html>
+
+<head>
+
+    <!-- Title -->
+
+    <title>
+        Website Boehler Trading
+    </title>
+
+    <!-- Meta -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+    <!------- CSS ------->
+
+    <link rel="stylesheet" href="Assets/Css/Vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/Css/Vendor/Font-Awesome.css">
+
+    <link rel="stylesheet" href="Assets/Css/Vendor/Animation-On-Scroll.css">
+    <link rel="stylesheet" href="Assets/Css/Vendor/Magnific-Popup.css">
+    <link rel="stylesheet" href="Assets/Css/Vendor/Chart.css">
+
+    <link rel="stylesheet" href="Assets/Css/Css-Master_2.css">
+</head>
+
+<!-- Desktop -->
+
+<body class="desktop default">
+
+    <!-- Modal -->
+
+    <div class="modal modal-primary fade" id="modal-graph-detail" tabindex="-1" role="dialog"
+        aria-labelledby="modal-graph-detail-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="h6 text-secondary color-secondary" id="modal-graph-detail-title">
+                        Graph Detail
+                    </h4>
+                    <a class="btn btn-modal-close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <p class="small text-tertiary color-white">
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                        egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    </p>
+                    <br />
+                    <p class="small text-tertiary color-white">
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
+                        augue laoreet rutrum faucibus dolor auctor.
+                    </p>
+                    <br />
+                    <p class="small text-tertiary color-white">
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                        nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+                    <br />
+                    <p class="small text-tertiary color-white">
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                        egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-master navbar-expand-lg">
+        <a class="nav-link for-brand text-uppercase" href="#">
+            Boehler Trading
+        </a>
+        <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link for-link" onclick="openLink('/')">
+                        <i class="fas fa-home"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" href="#">
+                        <i class="fab fa-stack-exchange"></i>Exchange
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link active" href="#">
+                        <i class="fas fa-chart-area"></i>Analytics
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" href="#">
+                        <i class="fas fa-exchange-alt"></i>Convert
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" href="#">
+                        <i class="fas fa-desktop"></i>Helpdesk
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link for-icon" href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-icon" href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-icon" href="#">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+                <li class="nav-item ml-0 ml-md-0 ml-lg-4">
+                    <a class="btn btn-block btn-wallet" href="#">
+                        <i class="fas fa-cog"></i> Wallet
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+
+    <div class="page-content-wrapper analytic mb-4 mb-md-4 mb-lg-4">
+        <div class="container-fluid py-5 py-md-5 py-lg-4">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-9 pr-3 pr-md-3 pr-lg-2 my-4 my-md-4 my-lg-0">
+
+                    <!--Section Chart-->
+
+                    <div class="section section-chart">
+                        <div class="chart-content">
+                            <div class="content-graph">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="nav-tab quinary">
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-graph-one-tab"
+                                                        data-toggle="pill" href="#pills-graph-one" role="tab"
+                                                        aria-controls="pills-graph-one" aria-selected="true">
+                                                        5 Min Chart
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-graph-two-tab" data-toggle="pill"
+                                                        href="#pills-graph-two" role="tab"
+                                                        aria-controls="pills-graph-two" aria-selected="true">
+                                                        15 Min Chart
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-graph-three-tab" data-toggle="pill"
+                                                        href="#pills-graph-three" role="tab"
+                                                        aria-controls="pills-graph-three" aria-selected="true">
+                                                        25 Min Chart
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-graph-four-tab" data-toggle="pill"
+                                                        href="#pills-graph-four" role="tab"
+                                                        aria-controls="pills-graph-four" aria-selected="true">
+                                                        Profit Chart
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-graph-one"
+                                                    role="tabpanel" aria-labelledby="pills-graph-one-tab">
+                                                    <div class="row mt-4 mt-md-4 mt-lg-4">
+                                                        <div class="col-12 col-md-12 col-lg-12">
+                                                            <div class="chart-content mb-4 mb-md-4 mb-lg-4"
+                                                                style="height: 600px;">
+                                                                <!-- TradingView Widget BEGIN -->
+                                                                <div class="tradingview-widget-container">
+                                                                    <div id="tradingview_graph-one"></div>
+                                                                </div>
+                                                                <!-- TradingView Widget END -->
+                                                            </div>
+                                                            <div class="chart-footer">
+                                                                <div class="row">
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Price
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastPrice">
+                                                                                    1245.654331<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Change
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastChange">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Volatility (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="volatility">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Highest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Highest">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-down ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6 col-md col-lg">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Lowest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Lowest">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-graph-two" role="tabpanel"
+                                                    aria-labelledby="pills-graph-two-tab">
+                                                    <div class="row mt-4 mt-md-4 mt-lg-4">
+                                                        <div class="col-12 col-md-12 col-lg-12">
+                                                            <div class="chart-header mb-4 mb-md-4 mb-lg-4">
+                                                                <div class="row align-items-center">
+                                                                    <div
+                                                                        class="text-center text-md-left text-lg-left col-10 col-md-4 col-lg-3 pl-3 pl-md-3 pl-lg-5 mb-4 mb-md-0 mb-lg-0 mx-auto mx-md-0 mx-lg-0">
+                                                                        <div class="text">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-secondary text-uppercase color-secondary">
+                                                                                    Graph Two - Detail
+                                                                                </h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="button">
+                                                                            <a class="btn btn-block btn-view-detail"
+                                                                                data-toggle="modal"
+                                                                                data-target="#modal-graph-detail">
+                                                                                View Detail<i
+                                                                                    class="fas fa-arrow-right"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-8 col-lg-9">
+                                                                        <div class="row">
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Today Max
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            0.913
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Week Max
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-green">
+                                                                                            6.01%
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Total Price
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            0.7513
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Market Cap
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            1.1433.876.00
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chart-content mb-4 mb-md-4 mb-lg-4">
+                                                                <canvas id="GraphTwo"></canvas>
+                                                            </div>
+                                                            <div class="chart-footer">
+                                                                <div class="row">
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Price
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastPrice2">
+                                                                                    1245.654331<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Change
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastChange2">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Volatility (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="volatility2">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Highest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Highest2">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-down ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6 col-md col-lg">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Lowest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Lowest2">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-graph-three" role="tabpanel"
+                                                    aria-labelledby="pills-graph-three-tab">
+                                                    <div class="row mt-4 mt-md-4 mt-lg-4">
+                                                        <div class="col-12 col-md-12 col-lg-12">
+                                                            <div class="chart-header mb-4 mb-md-4 mb-lg-4">
+                                                                <div class="row align-items-center">
+                                                                    <div
+                                                                        class="text-center text-md-left text-lg-left col-10 col-md-4 col-lg-3 pl-3 pl-md-3 pl-lg-5 mb-4 mb-md-0 mb-lg-0 mx-auto mx-md-0 mx-lg-0">
+                                                                        <div class="text">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-secondary text-uppercase color-secondary">
+                                                                                    Graph - Details
+                                                                                </h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="button">
+                                                                            <a class="btn btn-block btn-view-detail"
+                                                                                data-toggle="modal"
+                                                                                data-target="#modal-graph-detail">
+                                                                                View Detail<i
+                                                                                    class="fas fa-arrow-right"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-8 col-lg-9">
+                                                                        <div class="row">
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Today Max
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            0.913
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Week Max
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-green">
+                                                                                            6.01%
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Total Price
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            0.7513
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Market Cap
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            1.1433.876.00
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chart-content mb-4 mb-md-4 mb-lg-4">
+                                                                <canvas id="GraphThree"></canvas>
+                                                            </div>
+                                                            <div class="chart-footer">
+                                                                <div class="row">
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Price
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastPrice3">
+                                                                                    1245.654331<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Change
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastChange3">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Volatility (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="volatility3">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Highest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Highest3">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-down ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6 col-md col-lg">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Lowest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Lowest3">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-graph-four" role="tabpanel"
+                                                    aria-labelledby="pills-graph-four-tab">
+                                                    <div class="row mt-4 mt-md-4 mt-lg-4">
+                                                        <div class="col-12 col-md-12 col-lg-12">
+                                                            <div class="chart-header mb-4 mb-md-4 mb-lg-4">
+                                                                <div class="row align-items-center">
+                                                                    <div
+                                                                        class="text-center text-md-left text-lg-left col-10 col-md-4 col-lg-3 pl-3 pl-md-3 pl-lg-5 mb-4 mb-md-0 mb-lg-0 mx-auto mx-md-0 mx-lg-0">
+                                                                        <div class="text">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-secondary text-uppercase color-secondary">
+                                                                                    Graph Four - Detail
+                                                                                </h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="button">
+                                                                            <a class="btn btn-block btn-view-detail"
+                                                                                data-toggle="modal"
+                                                                                data-target="#modal-graph-detail">
+                                                                                View Detail<i
+                                                                                    class="fas fa-arrow-right"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-8 col-lg-9">
+                                                                        <div class="row">
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Today Max
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            0.913
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Week Max
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-green">
+                                                                                            6.01%
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Total Price
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            0.7513
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                                                <div class="text">
+                                                                                    <div class="text-subtitle">
+                                                                                        <h4
+                                                                                            class="small text-tertiary color-secondary">
+                                                                                            Market Cap
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div class="text-amount">
+                                                                                        <p
+                                                                                            class="text-tertiary color-white">
+                                                                                            1.1433.876.00
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chart-content mb-4 mb-md-4 mb-lg-4">
+                                                                <canvas id="GraphFour"></canvas>
+                                                            </div>
+                                                            <div class="chart-footer">
+                                                                <div class="row">
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Price
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastPrice4">
+                                                                                    1245.654331
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Last Change
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="lastChange4">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Volatility (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="volatility4">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Highest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Highest4">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-down ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6 col-md col-lg">
+                                                                        <div
+                                                                            class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                                            <div class="text-subtitle">
+                                                                                <h4
+                                                                                    class="small text-tertiary color-secondary">
+                                                                                    Lowest (24H)
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="text-amount">
+                                                                                <p class="small d-flex align-items-center text-tertiary color-white"
+                                                                                    id="24Lowest4">
+                                                                                    25.64204%<i
+                                                                                        class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 pl-3 pl-md-3 pl-lg-2">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12 mb-4 mb-md-4 mb-lg-3">
+
+                            <!--Section Graph-->
+
+                            <div class="section section-graph">
+                                <div class="market-header">
+                                    <div class="text">
+                                        <div class="text-title">
+                                            <h3 class="h6 text-tertiary color-white">
+                                                Exchange Rate
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="market-content py-3 py-md-3 py-lg-3 px-2 px-md-2 px-lg-2">
+                                    <div class="header-graph">
+                                        <div class="row mx-0 mx-md-0 mx-lg-0">
+                                            <div class="col-6 col-md-6 col-lg-6">
+                                                <div class="text-title">
+                                                    <h3 class="p text-tertiary color-white" id="exchangeRatePair">
+                                                        USD / BTC
+                                                    </h3>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small text-tertiary color-secondary"
+                                                        id="exchangeRatePrice">
+                                                        0.913
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="text-right col-6 col-md-6 col-lg-6">
+                                                <div class="text-precentage">
+                                                    <p class="small text-tertiary color-green">
+                                                        6.01%
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-graph">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12 col-lg-12">
+                                                <canvas id="GraphFive"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-graph pt-3 pt-md-4 pt-lg-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12 col-lg-11 mx-lg-auto">
+                                                <div class="buy-button" id="exchangeRateButton">
+                                                    <div class="button">
+                                                        <a class="btn btn-block btn-buy" href="#">
+                                                            View Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12 mb-4 mb-md-4 mb-lg-4">
+
+                            <!--Section Graph-->
+
+                            <div class="section section-graph">
+                                <div class="market-header">
+                                    <div class="text">
+                                        <div class="text-title">
+                                            <h3 class="h6 text-tertiary color-white">
+                                                Comparative Chart
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="market-content py-3 py-md-3 py-lg-3 px-2 px-md-2 px-lg-2">
+                                    <div class="header-graph">
+                                        <div class="row mx-0 mx-md-0 mx-lg-0">
+                                            <div class="col-6 col-md-6 col-lg-6">
+                                                <div class="text-title">
+                                                    <h3 class="p text-tertiary color-white" id="exchangeRatePair2">
+                                                        USD / BTC
+                                                    </h3>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small text-tertiary color-secondary"
+                                                        id="exchangeRatePrice2">
+                                                        0.913
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="text-right col-6 col-md-6 col-lg-6">
+                                                <div class="text-precentage">
+                                                    <p class="small text-tertiary color-red">
+                                                        6.01%
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-graph">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12 col-lg-12">
+                                                <canvas id="GraphSix"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-graph pt-3 pt-md-4 pt-lg-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12 col-lg-11 mx-lg-auto">
+                                                <div class="buy-button" id="exchangeRateButton2">
+                                                    <div class="button">
+                                                        <a class="btn btn-block btn-buy" href="#">
+                                                            View Details
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footbar -->
+
+    <footer class="footbar footbar-master">
+        <div class="container py-5 py-md-5 py-lg-5">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-10 mx-0 mx-md-auto mx-lg-auto">
+                    <div class="row">
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    About Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    Imprint
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    FAQ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    Disclaimer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footbar footbar-copyright">
+        <div class="container py-3 py-md-3 py-lg-3">
+            <div class="row">
+                <div class="text-center col-12 col-md-12 col-lg-12">
+                    <div class="text">
+                        <div class="text-copyright">
+                            <p class="small text-tertiary color-white">
+                                © 2020 Copyright: Boehler Trading
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------- Script ------->
+
+    <script src="Assets/JavaScript/Jquery.min.js"></script>
+    <script src="Assets/JavaScript/AOS.min.js"></script>
+
+    <script src="Assets/JavaScript/Vendor-Javascript.js"></script>
+    <script src="Assets/JavaScript/Custom-Javascript.js"></script>
+</body>
+
+</html>

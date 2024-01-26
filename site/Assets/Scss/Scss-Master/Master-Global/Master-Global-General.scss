@@ -1,0 +1,85 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - General -------------------- //
+
+// Html
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Body
+
+body {
+    @include overflow-x-hidden;
+
+    @include pr-0;
+
+    @include font-primary-light;
+
+    color               : $c-white;
+
+    background          : linear-gradient(45deg, rgba(45,45,63,1) 0%, rgba(13,13,41,1) 100%);
+}
+
+// Image
+
+img {
+    width               : 100%;
+}
+
+// Anchor
+
+a {
+    transition          : all 0.5s ease;
+
+    i {
+        transition      : all 0.25s ease;
+    }
+
+    &:hover &:focus, &:active {
+        transition      : all 0.5s ease;
+
+        i {
+            transition  : all 0.25s ease;
+        }
+    }
+}
+
+// Button
+
+.btn {
+    border-radius       : 0.15em;
+}
+
+// Grid
+
+.container {
+    padding-top         : 3.5rem;
+    padding-bottom      : 3.5rem;
+}
+
+.container-fluid {
+    padding-top         : 3.5rem;
+    padding-bottom      : 3.5rem;
+}
+
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+    @include mb-0;
+}
+
+p {
+    @include mb-0;
+}
+
+label {
+    @include mb-0;
+}
+
+

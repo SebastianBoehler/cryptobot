@@ -1,0 +1,68 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Card -------------------- //
+
+// Graph Favourite Card
+
+.graph-favourite-card {
+
+    // Primary
+
+    &.primary {
+        @include p-3;
+
+        border-bottom        : 1px solid $c-quarter-normal;
+    }
+}
+
+// Activity Card
+
+.history-card {
+
+    // Primary
+
+    &.primary {
+        @include py-3;
+
+        border-bottom               : 1px solid $c-quarter-normal;
+
+        .history-icon {
+            a {
+                padding             : 0.4rem 0.5rem;
+
+                color               : $c-tertiary-normal;
+
+                background-color    : $c-secondary-normal;
+                border-radius       : 0.25em;
+
+                i {
+                    @include small;
+                }
+            }
+        }
+
+        .history-text {
+            .text-subtitle {
+                h4 {
+                    line-height     : 1.5;
+                }
+            }
+
+            .text-date {
+                p {
+                    line-height     : 1.5;
+                }
+            }
+
+            .text-amount {
+                p {
+                    line-height     : 1.5;
+                }
+            }
+        }
+    }
+}

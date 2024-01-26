@@ -1,0 +1,27 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Footbar -------------------- //
+
+.footbar {
+    
+    // Footbar Master
+
+    &.footbar-master {
+        border-bottom       : 1px solid $c-tertiary-normal;
+        border-top          : 1px solid $c-tertiary-normal;
+
+        @include media-breakpoint-down(sm) {
+            @include display-none;
+        }
+    }
+
+    // Footbar Copyright
+
+    &.footbar-copyright {
+        background-color    : $c-tertiary-normal;
+    }
+}

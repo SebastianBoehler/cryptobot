@@ -1,0 +1,56 @@
+
+
+// -------------------- Family -------------------- //
+
+$font-primary                   : 'Roboto';
+
+// -------------------- Font Properties -------------------- //
+
+@mixin font-primary-properties {
+    font: {
+        family      : $font-primary;
+        style       : normal;
+    }
+}
+
+// -------------------- Font Primary -------------------- //
+
+@mixin font-primary-light() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 300;
+    }
+}
+
+@mixin font-primary-regular() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 400;
+    }
+}
+
+@mixin font-primary-medium() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 500;
+    }
+}
+
+@mixin font-primary-bold() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 700;
+    }
+}
+
+@mixin font-primary-black() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 900;
+    }
+}

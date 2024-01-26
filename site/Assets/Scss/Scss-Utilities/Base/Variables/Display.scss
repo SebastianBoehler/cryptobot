@@ -1,0 +1,38 @@
+
+
+// -------------------- Display -------------------- //
+
+$display-block                  : block;
+$display-compact                : compact;
+$display-contents               : contents;
+$display-flex                   : flex;
+$display-grid                   : grid;
+$display-list-item              : list-item;
+$display-marker                 : marker;
+$display-none                   : none;
+$display-normal                 : normal;
+
+// -------------------- Display Inline -------------------- //
+
+$display-inline                  : inline;
+$display-inline-block            : inline-block;
+$display-inline-flex             : inline-flex;
+$display-inline-grid             : inline-grid;
+$display-inline-table            : inline-table;
+
+// -------------------- Display Table -------------------- //
+
+$display-table                  : block;
+$display-table-caption          : compact;
+$display-table-cell             : contents;
+$display-table-column           : flex;
+$display-table-column-group     : grid;
+$display-table-footer-group     : list-item;
+$display-table-header-group     : marker;
+$display-table-row              : none;
+$display-table-row-group        : normal;
+
+// -------------------- Display Webkit -------------------- //
+
+$display-webkit-box             : -webkit-box;
+$display-webkit-inline-box      : -webkit-inline-box;

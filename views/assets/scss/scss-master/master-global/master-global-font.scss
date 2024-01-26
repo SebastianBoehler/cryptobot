@@ -1,0 +1,50 @@
+
+
+// Utitlities
+
+@import "../../Scss-Vendor/_font-face.scss";
+@import "../../Scss-Vendor/_fontello.scss";
+
+// -------------------- Master - Font -------------------- //
+
+// Font - Primary
+
+@font-face {
+  font-family       : 'Roboto';
+  font-style        : normal;
+  font-weight       : 300;
+  src               : url('../../fonts/Roboto/Roboto-Light.ttf');
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Roboto';
+  font-style        : normal;
+  font-weight       : 400;
+  src               : url('../../fonts/Roboto/Roboto-Regular.ttf');
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Roboto';
+  font-style        : normal;
+  font-weight       : 500;
+  src               : url('../../fonts/Roboto/Roboto-Medium.ttf');
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Roboto';
+  font-style        : normal;
+  font-weight       : 700;
+  src               : url('../../fonts/Roboto/Roboto-Bold.ttf');
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Roboto';
+  font-style        : normal;
+  font-weight       : 900;
+  src               : url('../../fonts/Roboto/Roboto-Black.ttf');
+  font-display      : swap;
+}

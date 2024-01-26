@@ -1,0 +1,58 @@
+
+
+// Utitlities
+
+@import "../../Scss-Vendor/_font-face.scss";
+@import "../../Scss-Vendor/_fontello.scss";
+
+// -------------------- Master - Font -------------------- //
+
+// Font - Primary
+
+@font-face {
+  font-family       : 'Poppins';
+  font-style        : normal;
+  font-weight       : 300;
+  src               : url(/Assets/Fonts/Poppins/Poppins-Light.otf);
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Poppins';
+  font-style        : normal;
+  font-weight       : 400;
+  src               : url(/Assets/Fonts/Poppins/Poppins-Regular.otf);
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Poppins';
+  font-style        : normal;
+  font-weight       : 600;
+  src               : url(/Assets/Fonts/Poppins/Poppins-SemiBold.otf);
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Poppins';
+  font-style        : normal;
+  font-weight       : 700;
+  src               : url(/Assets/Fonts/Poppins/Poppins-Bold.otf);
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Poppins';
+  font-style        : normal;
+  font-weight       : 800;
+  src               : url(/Assets/Fonts/Poppins/Poppins-ExtraBold.otf);
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Poppins';
+  font-style        : normal;
+  font-weight       : 900;
+  src               : url(/Assets/Fonts/Poppins/Poppins-Black.otf);
+  font-display      : swap;
+}

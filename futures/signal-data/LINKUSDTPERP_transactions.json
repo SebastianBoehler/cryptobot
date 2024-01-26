@@ -1,0 +1,584 @@
+[
+   {
+      "price": "27.825",
+      "time": 1614254650511,
+      "timestamp": "25.2.2021, 13:04:10",
+      "type": "Short Entry",
+      "details": [
+         29.45558145379523
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "26.662",
+      "time": 1614357750317,
+      "timestamp": "26.2.2021, 17:42:30",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.80180506672245
+      ],
+      "holdLength": "1718.3301min",
+      "upTrend": true
+   },
+   {
+      "price": "26.662",
+      "time": 1614357759555,
+      "timestamp": "26.2.2021, 17:42:39",
+      "type": "Long Entry",
+      "details": [
+         25.80180506672245
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "26.662",
+      "time": 1614361203636,
+      "timestamp": "26.2.2021, 18:40:03",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.876055237698466
+      ],
+      "holdLength": "57.40135min",
+      "upTrend": true
+   },
+   {
+      "price": "26.752",
+      "time": 1614363139820,
+      "timestamp": "26.2.2021, 19:12:19",
+      "type": "Long Entry",
+      "details": [
+         25.89899506507495
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "26.48",
+      "time": 1614363609810,
+      "timestamp": "26.2.2021, 19:20:09",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.906427962448483
+      ],
+      "holdLength": "7.833166666666667min",
+      "upTrend": true
+   },
+   {
+      "price": "26.775",
+      "time": 1614364900317,
+      "timestamp": "26.2.2021, 19:41:40",
+      "type": "Long Entry",
+      "details": [
+         25.927027009591868
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "26.47",
+      "time": 1614365310267,
+      "timestamp": "26.2.2021, 19:48:30",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.921552726943414
+      ],
+      "holdLength": "6.8325min",
+      "upTrend": true
+   },
+   {
+      "price": "25.136",
+      "time": 1614373967151,
+      "timestamp": "26.2.2021, 22:12:47",
+      "type": "Short Entry",
+      "details": [
+         25.88935783286248
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.541",
+      "time": 1614374792181,
+      "timestamp": "26.2.2021, 22:26:32",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.891856135047085
+      ],
+      "holdLength": "13.750499999999999min",
+      "upTrend": false
+   },
+   {
+      "price": "25.541",
+      "time": 1614374797041,
+      "timestamp": "26.2.2021, 22:26:37",
+      "type": "Long Entry",
+      "details": [
+         25.891856135047085
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.162",
+      "time": 1614376087628,
+      "timestamp": "26.2.2021, 22:48:07",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.88581554963161
+      ],
+      "holdLength": "21.509783333333335min",
+      "upTrend": false
+   },
+   {
+      "price": "25.162",
+      "time": 1614376092675,
+      "timestamp": "26.2.2021, 22:48:12",
+      "type": "Short Entry",
+      "details": [
+         25.88581554963161
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.01",
+      "time": 1614379562990,
+      "timestamp": "26.2.2021, 23:46:02",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.80623928965271
+      ],
+      "holdLength": "57.83858333333333min",
+      "upTrend": false
+   },
+   {
+      "price": "24.81",
+      "time": 1614379913466,
+      "timestamp": "26.2.2021, 23:51:53",
+      "type": "Short Entry",
+      "details": [
+         25.803719253418393
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "24.993",
+      "time": 1614380973389,
+      "timestamp": "27.2.2021, 00:09:33",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.775493893127265
+      ],
+      "holdLength": "17.665383333333335min",
+      "upTrend": false
+   },
+   {
+      "price": "25.433",
+      "time": 1614384822813,
+      "timestamp": "27.2.2021, 01:13:42",
+      "type": "Long Entry",
+      "details": [
+         25.741193713838413
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.708",
+      "time": 1614389553491,
+      "timestamp": "27.2.2021, 02:32:33",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.751369618397934
+      ],
+      "holdLength": "78.84463333333333min",
+      "upTrend": false
+   },
+   {
+      "price": "25.708",
+      "time": 1614389558460,
+      "timestamp": "27.2.2021, 02:32:38",
+      "type": "Short Entry",
+      "details": [
+         25.751369618397934
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.901",
+      "time": 1614389788522,
+      "timestamp": "27.2.2021, 02:36:28",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.73763301138442
+      ],
+      "holdLength": "3.834366666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "25.901",
+      "time": 1614389793515,
+      "timestamp": "27.2.2021, 02:36:33",
+      "type": "Long Entry",
+      "details": [
+         25.73763301138442
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.81",
+      "time": 1614391553807,
+      "timestamp": "27.2.2021, 03:05:53",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.74091762209918
+      ],
+      "holdLength": "29.338199999999997min",
+      "upTrend": false
+   },
+   {
+      "price": "25.81",
+      "time": 1614391558777,
+      "timestamp": "27.2.2021, 03:05:58",
+      "type": "Short Entry",
+      "details": [
+         25.74091762209918
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "26.022",
+      "time": 1614393249031,
+      "timestamp": "27.2.2021, 03:34:09",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.759343946195248
+      ],
+      "holdLength": "28.1709min",
+      "upTrend": false
+   },
+   {
+      "price": "26.022",
+      "time": 1614393254090,
+      "timestamp": "27.2.2021, 03:34:14",
+      "type": "Long Entry",
+      "details": [
+         25.759343946195248
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.739",
+      "time": 1614394004116,
+      "timestamp": "27.2.2021, 03:46:44",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.76087967688344
+      ],
+      "holdLength": "12.500433333333332min",
+      "upTrend": false
+   },
+   {
+      "price": "25.739",
+      "time": 1614394009117,
+      "timestamp": "27.2.2021, 03:46:49",
+      "type": "Short Entry",
+      "details": [
+         25.76087967688344
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.642",
+      "time": 1614397864630,
+      "timestamp": "27.2.2021, 04:51:04",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.744827131880516
+      ],
+      "holdLength": "64.25855min",
+      "upTrend": false
+   },
+   {
+      "price": "25.642",
+      "time": 1614397869609,
+      "timestamp": "27.2.2021, 04:51:09",
+      "type": "Long Entry",
+      "details": [
+         25.744827131880516
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.429",
+      "time": 1614398389707,
+      "timestamp": "27.2.2021, 04:59:49",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.738011013459012
+      ],
+      "holdLength": "8.668299999999999min",
+      "upTrend": false
+   },
+   {
+      "price": "25.429",
+      "time": 1614398394666,
+      "timestamp": "27.2.2021, 04:59:54",
+      "type": "Short Entry",
+      "details": [
+         25.738011013459012
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.31",
+      "time": 1614401735035,
+      "timestamp": "27.2.2021, 05:55:35",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.699391071313922
+      ],
+      "holdLength": "55.67281666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "25.31",
+      "time": 1614401740029,
+      "timestamp": "27.2.2021, 05:55:40",
+      "type": "Long Entry",
+      "details": [
+         25.699391071313922
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.412",
+      "time": 1614407185681,
+      "timestamp": "27.2.2021, 07:26:25",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.666633962430467
+      ],
+      "holdLength": "90.76086666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "25.412",
+      "time": 1614407190731,
+      "timestamp": "27.2.2021, 07:26:30",
+      "type": "Short Entry",
+      "details": [
+         25.666633962430467
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.464",
+      "time": 1614407305674,
+      "timestamp": "27.2.2021, 07:28:25",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.66606992956155
+      ],
+      "holdLength": "1.9157166666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "25.464",
+      "time": 1614407310663,
+      "timestamp": "27.2.2021, 07:28:30",
+      "type": "Long Entry",
+      "details": [
+         25.66606992956155
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.327",
+      "time": 1614409485913,
+      "timestamp": "27.2.2021, 08:04:45",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.667216726888093
+      ],
+      "holdLength": "36.25416666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "25.327",
+      "time": 1614409490920,
+      "timestamp": "27.2.2021, 08:04:50",
+      "type": "Short Entry",
+      "details": [
+         25.667216726888093
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.623",
+      "time": 1614410896268,
+      "timestamp": "27.2.2021, 08:28:16",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.651812020220884
+      ],
+      "holdLength": "23.422466666666665min",
+      "upTrend": false
+   },
+   {
+      "price": "25.623",
+      "time": 1614410901309,
+      "timestamp": "27.2.2021, 08:28:21",
+      "type": "Long Entry",
+      "details": [
+         25.651812020220884
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.487",
+      "time": 1614411771216,
+      "timestamp": "27.2.2021, 08:42:51",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.64681517861541
+      ],
+      "holdLength": "14.49845min",
+      "upTrend": false
+   },
+   {
+      "price": "25.487",
+      "time": 1614411776188,
+      "timestamp": "27.2.2021, 08:42:56",
+      "type": "Short Entry",
+      "details": [
+         25.64681517861541
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.599",
+      "time": 1614412236277,
+      "timestamp": "27.2.2021, 08:50:36",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.664180249814006
+      ],
+      "holdLength": "7.66815min",
+      "upTrend": false
+   },
+   {
+      "price": "25.599",
+      "time": 1614412241218,
+      "timestamp": "27.2.2021, 08:50:41",
+      "type": "Long Entry",
+      "details": [
+         25.664180249814006
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.512",
+      "time": 1614412646269,
+      "timestamp": "27.2.2021, 08:57:26",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.645209909412134
+      ],
+      "holdLength": "6.75085min",
+      "upTrend": false
+   },
+   {
+      "price": "25.512",
+      "time": 1614412651295,
+      "timestamp": "27.2.2021, 08:57:31",
+      "type": "Short Entry",
+      "details": [
+         25.645209909412134
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.583",
+      "time": 1614413286517,
+      "timestamp": "27.2.2021, 09:08:06",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.653009822333132
+      ],
+      "holdLength": "10.587033333333332min",
+      "upTrend": false
+   },
+   {
+      "price": "25.583",
+      "time": 1614413291500,
+      "timestamp": "27.2.2021, 09:08:11",
+      "type": "Long Entry",
+      "details": [
+         25.653009822333132
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.374",
+      "time": 1614414113819,
+      "timestamp": "27.2.2021, 09:21:53",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         25.646461251442872
+      ],
+      "holdLength": "13.705316666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "25.374",
+      "time": 1614414118751,
+      "timestamp": "27.2.2021, 09:21:58",
+      "type": "Short Entry",
+      "details": [
+         25.646461251442872
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "25.396",
+      "time": 1614415910748,
+      "timestamp": "27.2.2021, 09:51:50",
+      "type": "Short Exit",
+      "profit": null,
+      "details": [
+         25.494431093853358
+      ],
+      "holdLength": "29.86661666666667min",
+      "upTrend": true
+   },
+   {
+      "price": "25.396",
+      "time": 1614415915715,
+      "timestamp": "27.2.2021, 09:51:55",
+      "type": "Long Entry",
+      "details": [
+         25.494431093853358
+      ],
+      "upTrend": false
+   }
+]

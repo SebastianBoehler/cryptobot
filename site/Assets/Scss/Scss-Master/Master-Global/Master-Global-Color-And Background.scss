@@ -1,0 +1,48 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Color And Background -------------------- //
+
+// ----- Color ----- //
+
+.color-primary {
+    color       : $c-primary !important;
+}
+
+.color-secondary {
+    color       : $c-secondary !important;
+}
+
+.color-tertiary {
+    color       : $c-tertiary !important;
+}
+
+.color-white {
+    color       : $c-white !important;
+}
+
+.color-green {
+    color       : $c-green !important;
+}
+
+.color-red {
+    color       : $c-red !important;
+}
+
+// ----- Background ----- //
+
+.background-primary {
+    color       : $c-primary !important;
+}
+
+.background-secondary {
+    color       : $c-secondary !important;
+}
+
+.background-tertiary {
+    color       : $c-tertiary !important;
+}
+

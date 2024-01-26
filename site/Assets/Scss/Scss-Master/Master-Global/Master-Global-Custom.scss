@@ -1,0 +1,236 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Custom -------------------- //
+
+.home {
+
+    .section {
+
+        // Section Market
+
+        &.section-market {
+            background-color        : $c-tertiary-normal;
+
+            height                  : 60.85rem;
+
+            // Header
+
+            .market-header {
+                @include p-3;
+
+                border-bottom       : 1px solid $c-quarter-normal;
+            }
+
+            // Content
+
+            .market-content {
+                .content-holding {
+                    @include p-3;
+
+                    border-bottom       : 1px solid $c-quarter-normal;
+                }
+
+                .content-exchange {
+                    .exchange-basic {
+                        .basic-search {
+                            @include p-3;
+                        }
+
+                        .basic-favourite {
+                            .favourite-header {
+                                @include p-3;
+
+                                border-top          : 1px solid $c-quarter-normal;
+                                border-bottom       : 1px solid $c-quarter-normal;
+                            }
+                        }
+                    }
+
+                    .exchange-graph {
+                        .graph-search {
+                            @include p-3;
+                        }
+
+                        .graph-favourite {
+                            .favourite-header {
+                                @include p-3;
+
+                                border-top          : 1px solid $c-quarter-normal;
+                                border-bottom       : 1px solid $c-quarter-normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Section Chart
+
+        &.section-chart {
+            @include p-3;
+
+            background-color        : $c-tertiary-normal;
+        }
+
+        // Section Order
+
+        &.section-order {
+            @include p-3;
+
+            background-color        : $c-tertiary-normal;
+
+            // Sell
+
+            .order-sell {
+
+                // Header
+
+                .sell-header {
+                    @include mb-3;
+                }
+            }
+
+            // Buy
+
+            .order-buy {
+
+                // Header
+
+                .buy-header {
+                    @include mb-3;
+                }
+            }
+        }
+
+        // Section Buy Sell
+
+        &.section-buy-sell {
+            @include pb-3;
+            @include px-4;
+
+            background-color        : $c-tertiary-normal;
+
+            // Content
+
+            .buy-sell-content {
+                .content-buy {
+                    .buy-price {
+                        @include mb-3;
+                    }
+
+                    .buy-amount {
+                        @include mb-3;
+                    }
+
+                    .buy-text {
+                        @include mb-4;
+                    }
+                }
+
+                .content-sell {
+                    .sell-price {
+                        @include mb-3;
+                    }
+
+                    .sell-amount {
+                        @include mb-3;
+                    }
+
+                    .sell-text {
+                        @include mb-4;
+                    }
+                }
+            }
+        }
+
+        // Section History
+
+        &.section-history {
+            @include py-3;
+            @include px-4;
+
+            height                  : 32.75rem;
+
+            background-color        : $c-tertiary-normal;
+        }
+    }
+}
+
+.analytic {
+
+    .section {
+
+        // Section Chart
+
+        &.section-chart {
+            @include p-3;
+            @include pt-0;
+
+            background-color        : $c-tertiary-normal;
+        }
+
+        // Section Graph
+
+        &.section-graph {
+            background-color        : $c-tertiary-normal;
+
+            // Header
+
+            .market-header {
+                @include p-3;
+
+                border-bottom       : 1px solid $c-quarter-normal;
+            }
+
+            // Content
+
+            .market-content {
+                .content-holding {
+                    @include p-3;
+
+                    border-bottom       : 1px solid $c-quarter-normal;
+                }
+
+                .content-exchange {
+                    .exchange-basic {
+                        .basic-search {
+                            @include p-3;
+                        }
+
+                        .basic-favourite {
+                            .favourite-header {
+                                @include p-3;
+
+                                border-top          : 1px solid $c-quarter-normal;
+                                border-bottom       : 1px solid $c-quarter-normal;
+                            }
+                        }
+                    }
+
+                    .exchange-graph {
+                        .graph-search {
+                            @include p-3;
+                        }
+
+                        .graph-favourite {
+                            .favourite-header {
+                                @include p-3;
+
+                                border-top          : 1px solid $c-quarter-normal;
+                                border-bottom       : 1px solid $c-quarter-normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

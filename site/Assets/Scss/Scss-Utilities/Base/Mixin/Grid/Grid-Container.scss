@@ -1,0 +1,35 @@
+
+
+// -------------------- Container -------------------- //
+
+@mixin container() {
+    width               : 100%;
+
+    margin              : 0rem auto 0rem auto;
+
+    @include media-breakpoint-down(sm) {
+        padding         : 1rem 1rem 1rem 1rem;
+        max-width: 500px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding         : 2.5rem 1rem 2.5rem 1rem;
+        max-width: 740px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding         : 2.5rem 1rem 2.5rem 1rem;
+        max-width: 1140px;
+    }
+}
+
+// -------------------- Container Fluid -------------------- //
+
+@mixin container-fluid() {
+    width               : 100%;
+    max-width           : 100%;
+
+    margin              : 0rem auto 0rem auto;
+    padding             : 0rem 1rem 0rem 1rem;
+
+}

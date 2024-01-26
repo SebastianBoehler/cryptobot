@@ -1,0 +1,26 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Modal -------------------- //
+
+.modal {
+
+    // Primary
+
+    &.modal-primary {
+        .modal-dialog {
+            .modal-content {
+                background-color        : $c-tertiary-normal;
+
+                .modal-header {
+                    @include align-items-center;
+
+                    border-bottom       : 1px solid $c-quarter-normal;
+                }
+            }
+        }
+    }
+}

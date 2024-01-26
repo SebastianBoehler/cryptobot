@@ -1,0 +1,192 @@
+
+
+// -------------------- General -------------------- //
+
+@mixin fas() {
+    font-family: "Font Awesome 5 Free",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 900;
+}
+
+@mixin fab() {
+    font-family: "Font Awesome 5 Brands";
+}
+
+// -------------------- Font-Size -------------------- //
+
+@mixin fa-2x() {
+    font-size: 2em;
+}
+
+@mixin fa-3x() {
+    font-size: 3em;
+}
+
+// -------------------- Icon -------------------- //
+
+@mixin fa-newspaper() {
+    content: '\f1ea';
+}
+
+@mixin fa-trash() {
+    content: '\f1f8';
+}
+
+@mixin fa-instagram() {
+    content: '\f16d';
+}
+
+@mixin fa-user() {
+    content: '\f007';
+}
+
+@mixin fa-check() {
+    content: '\f00c';
+}
+
+@mixin fa-times() {
+    content: '\f00d';
+}
+
+@mixin fa-filter() {
+    content: '\f0b0';
+}
+
+@mixin fa-sort-down() {
+    content: '\f0dd';
+}
+
+@mixin fa-link() {
+    content: '\f0c1';
+}
+
+@mixin fa-sort() {
+    content: '\f0dc';
+}
+
+@mixin fa-home() {
+    content: '\f015';
+}
+
+@mixin fa-chevron-right() {
+    content: '\f054';
+}
+
+@mixin fa-chevron-left() {
+    content: '\f053';
+}
+
+@mixin fa-plus() {
+    content: '\f067';
+}
+
+@mixin fa-minus() {
+    content: '\f068';
+}
+
+@mixin fa-exclamation-triangle() {
+    content: '\f071';
+}
+
+@mixin fa-upload() {
+    content: '\f093';
+}
+
+@mixin fa-phone-square() {
+    content: '\f098';
+}
+
+@mixin fa-whatsapp() {
+    content: '\f232';
+}
+
+@mixin fa-shopping-bag() {
+    content: '\f290';
+}
+
+@mixin fa-shopping-basket() {
+    content: '\f291';
+}
+
+@mixin fa-pen() {
+    content: '\f304';
+}
+
+@mixin fa-truck-loading() {
+    content: '\f4de';
+}
+
+@mixin fa-map-marked-alt() {
+    content: '\f5a0';
+}
+
+@mixin fa-users-cog() {
+    content: '\f509';
+}
+
+@mixin fa-coins() {
+    content: '\f51e';
+}
+
+@mixin fa-money-bill-wave-alt() {
+    content: '\f53b';
+}
+
+@mixin fa-headset() {
+    content: '\f590';
+}
+
+@mixin fa-comments-dollar() {
+    content: '\f653';
+}
+
+@mixin fa-square-full() {
+    content: '\f45c';
+}
+
+@mixin fa-chevron-circle-right() {
+    content: '\f138';
+}
+
+@mixin fa-thumbs-up() {
+    content: '\f164';
+}
+
+@mixin fa-chevron-up() {
+    content: '\f077';
+}
+
+@mixin fa-chevron-down() {
+    content: '\f078';
+}
+
+@mixin fa-mars() {
+    content: '\f222';
+}
+
+@mixin fa-venus() {
+    content: '\f221';
+}
+
+@mixin fa-line() {
+    content: '\f3c10';
+}
+
+@mixin fa-car() {
+    content: '\f1b9';
+}
+
+@mixin fa-car-side() {
+    content: '\f5e4';
+}
+
+@mixin fa-file() {
+    content: '\f15b';
+}
+
+@mixin fa-angle-double-left() {
+    content: '\f100';
+}
+
+@mixin fa-angle-double-right() {
+    content: '\f101';
+}

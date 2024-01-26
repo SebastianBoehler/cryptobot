@@ -1,0 +1,141 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Card -------------------- //
+
+// Data
+
+.data-card {
+
+    // Primary
+
+    &.primary {
+        .card-wrapper {
+
+            // Primary
+
+            &.primary {
+                @include mb-2;
+                @include p-4;
+
+                background-color            : $c-white;
+
+                border-radius               : 0.5em;
+            }
+        }
+
+        .data-card-header {
+            @include display-flex;
+
+            @include align-items-center;
+
+            @include pb-3;
+            @include mb-3;
+
+            justify-content         : space-between;
+
+            border-bottom           : 1px solid $c-grey-super-light;
+
+            .header-text {
+                .title {
+                    h3 {
+                        @include mb-0;
+
+                        @include font-primary-bold;
+                        @include h6;
+
+                        color       : $c-black;
+                    }
+                }
+            }
+
+            .header-button {
+                .btn-header {
+                    @include font-primary-bold;
+                    @include small;
+
+                    @include text-transform-uppercase;
+
+                    padding                 : 0.30rem 1rem;
+
+                    line-height             : 1.5;
+
+                    color                   : $c-primary-normal;
+
+                    background-color        : $c-tertiary-normal;
+
+                    &:hover {
+                        color               : $c-white;
+
+                        background-color    : $c-primary-normal;
+                    }
+                }
+            }
+        }
+
+        .data-card-content {
+            .content-text {
+                .desc {
+                    p {
+                        @include display-flex;
+
+                        @include align-items-center;
+
+                        @include mb-0;
+
+                        @include p;
+
+                        justify-content         : space-between;
+
+                        color                   : $c-grey;
+
+                        span {
+                            &:first-child {
+                                @include font-primary-light;
+
+                                font-style      : italic;
+                            }
+
+                            &:last-child {
+                                @include font-primary-bold;
+                            }
+
+                            &.plus {
+                                color           : $c-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .data-card-footer {
+            @include text-align-right;
+
+            @include py-2;
+            @include px-3;
+
+            background-color        : $c-grey-super-light;
+
+            border-radius           : 0.5em;
+
+            .footer-text {
+                .caption {
+                    span {
+                        @include font-primary-medium;
+                        @include small;
+
+                        opacity             : 0.75;
+
+                        line-height         : 1.5;
+
+                        color               : $c-grey;
+                    }
+                }
+            }
+        }
+    }
+}

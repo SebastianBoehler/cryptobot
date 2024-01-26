@@ -1,0 +1,84 @@
+
+
+// -------------------- Family -------------------- //
+
+$font-primary                   : 'Poppins';
+
+// -------------------- Font Properties -------------------- //
+
+@mixin font-primary-properties {
+    font: {
+        family      : $font-primary;
+        style       : normal;
+    }
+
+    letter: {
+        spacing     : 0.025em;
+    }
+}
+
+// -------------------- Font Primary -------------------- //
+
+@mixin font-primary-heavy() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 900;
+    }
+}
+
+@mixin font-primary-black() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 800;
+    }
+}
+
+@mixin font-primary-bold() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 700;
+    }
+}
+
+@mixin font-primary-semi-bold() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 600;
+    }
+}
+
+@mixin font-primary-medium() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 500;
+    }
+}
+
+@mixin font-primary-regular() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 400;
+    }
+}
+
+@mixin font-primary-book() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 400;
+    }
+}
+
+@mixin font-primary-light() {
+    @include font-primary-properties;
+
+    font: {
+        weight      : 300;
+    }
+}

@@ -1,0 +1,110 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Button -------------------- //
+
+.btn-wallet {
+    @include py-1;
+    @include px-4;
+
+    @include font-primary-semi-bold;
+    @include small;
+
+    color               : $c-white;
+
+    background-color    : $c-primary-normal;
+
+    box-shadow          : 0 0px 0px rgba(49, 77, 237, .5);
+
+    i {
+        @include pr-1;
+
+        color           : $c-white;
+    }
+
+    &:hover, &:focus, &:active {
+        color           : $c-white;
+
+        box-shadow      : 0 5px 15px rgba(49, 77, 237, .5);
+    }
+}
+
+.btn-swap {
+    @include p-2;
+
+    @include small;
+
+    background-color        : $c-secondary-normal;
+    border-radius           : 0.15em;
+
+    i {
+        color               : $c-white;
+    }
+
+    &:hover, &:focus, &:active {
+        background-color    : $c-secondary-darken;
+    }
+}
+
+.btn-buy {
+    @include font-primary-semi-bold;
+    @include small;
+
+    padding             : 0.75rem;
+
+    color               : $c-white;
+
+    background-color    : $c-primary-normal;
+
+    box-shadow          : 0 0px 0px rgba(49, 77, 237, .5);
+
+    i {
+        @include pr-1;
+
+        color           : $c-white;
+    }
+
+    &:hover, &:focus, &:active {
+        color           : $c-white;
+
+        box-shadow      : 0 5px 15px rgba(49, 77, 237, .5);
+    }
+}
+
+.btn-view-detail {
+    @include display-flex;
+
+    @include align-items-center;
+
+    @include text-align-left;
+
+    @include p-0;
+
+    @include font-primary-semi-bold;
+    @include small;
+
+    justify-content     : space-between;
+
+    color               : $c-white;
+
+    background-color    : transparent;
+
+    i {
+        @include pl-2;
+
+        color           : $c-white;
+    }
+
+    &:hover, &:focus, &:active {
+        @include text-decoration-underline;
+
+        color           : $c-white;
+    }
+
+    @include media-breakpoint-down(sm) {
+        justify-content     : center;
+    }
+}

@@ -1,0 +1,24 @@
+
+
+// Utitlities
+
+@import "../../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Navigation - Navbar - Layout -------------------- //
+
+.navbar {
+
+    // Primary
+
+    &.navbar-primary {
+        @include py-2;
+
+        background-color    : $c-white;
+
+        > .container {
+            @include p-0;
+
+            max-width       : initial;
+        }
+    }
+}

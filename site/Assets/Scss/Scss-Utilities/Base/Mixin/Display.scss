@@ -1,0 +1,109 @@
+
+
+// -------------------- Display -------------------- //
+
+@mixin display-block() {
+    display: block;
+}
+
+@mixin display-compact() {
+    display: compact;
+}
+
+@mixin display-contents() {
+    display: contents;
+}
+
+@mixin display-flex() {
+    display: flex;
+}
+
+@mixin display-grid() {
+    display: grid;
+}
+
+@mixin display-list-item() {
+    display: list-item;
+}
+
+@mixin display-marker() {
+    display: marker;
+}
+
+@mixin display-none() {
+    display: none;
+}
+
+@mixin display-normal() {
+    display: normal;
+}
+
+// -------------------- Display Inline -------------------- //
+
+@mixin display-inline() {
+    display: inline;
+}
+
+@mixin display-inline-block() {
+    display: inline-block;
+}
+
+@mixin display-inline-flex() {
+    display: inline-flex;
+}
+
+@mixin display-inline-grid() {
+    display: inline-grid;
+}
+
+@mixin display-inline-table() {
+    display: inline-table;
+}
+
+// -------------------- Display Table -------------------- //
+
+@mixin display-table() {
+    display: table;
+}
+
+@mixin display-table-caption() {
+    display: table-caption;
+}
+
+@mixin display-table-cell() {
+    display: table-cell;
+}
+
+@mixin display-table-column() {
+    display: table-column;
+}
+
+@mixin display-table-column-group() {
+    display: table-column-group;
+}
+
+@mixin display-table-footer-group() {
+    display: table-footer-group;
+}
+
+@mixin display-table-header-group() {
+    display: table-header-group;
+}
+
+@mixin display-table-row() {
+    display: table-row;
+}
+
+@mixin display-table-row-group() {
+    display: table-row-group;
+}
+
+// -------------------- Display Webkit -------------------- //
+
+@mixin display-webkit-box() {
+    display: -webkit-box;
+}
+
+@mixin display-webkit-inline-box() {
+    display: -webkit-inline-box;
+}

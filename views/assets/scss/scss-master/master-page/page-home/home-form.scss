@@ -1,0 +1,100 @@
+
+
+// Utitlities
+
+@import "../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Page - Home - Form -------------------- //
+
+
+.home {
+
+    // Data List
+
+    .data-list {
+        
+        // Primary
+
+        &.primary {
+
+            // Footer
+
+            .data-list-footer {
+                .footer-form {
+                    .form-group {
+                        @include mb-0;
+
+                        label {
+                            @include font-primary-bold;
+                            @include smallest;
+
+                            @include text-transform-uppercase;
+
+                            opacity         : 0.65;
+
+                            letter-spacing  : 1.5px;
+
+                            color           : $c-black;
+                        }
+
+                        .form-control {
+                            @include width-100;
+                            @include height-auto;
+
+                            @include py-2;
+                            @include px-3;
+
+                            @include font-primary-regular;
+                            @include p;
+
+                            color               : $c-black;
+
+                            background-color    : $c-white;
+
+                            border              : 1px solid $c-grey-light;
+
+                            &::placeholder {
+                                opacity         : 1;
+
+                                color           : $c-grey;
+                            }
+                        }
+                    }
+
+                    .form-button {
+                        .btn-form {
+                            @include py-2;
+                            @include px-5;
+
+                            @include font-primary-bold;
+                            @include p;
+
+                            @include text-transform-uppercase;
+
+                            color                   : #ffffff;
+
+                            background-color        : $c-primary-normal;
+
+                            &:hover {
+                                background-color    : $c-primary-darken;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+
+                // Footer
+
+                .data-list-footer {
+                    .footer-form {
+                        .form-group {
+                            @include mb-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

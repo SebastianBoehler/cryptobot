@@ -1,0 +1,23 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Navbar -------------------- //
+
+.navbar {
+    
+    // Navbar Master
+
+    &.navbar-master {
+        @include py-0;
+
+        background-color    : transparent;
+        border-bottom       : 1px solid $c-tertiary;
+
+        @include media-breakpoint-down(md) {
+            @include py-2;
+        }
+    }
+}

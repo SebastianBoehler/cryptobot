@@ -1,0 +1,39 @@
+
+
+// -------------------- Decoration -------------------- //
+
+@mixin text-decoration-dashed() {
+    text-decoration: dashed;
+}
+
+@mixin text-decoration-dotted() {
+    text-decoration: dotted;
+}
+
+@mixin text-decoration-double() {
+    text-decoration: double;
+}
+
+@mixin text-decoration-line-through() {
+    text-decoration: line-through;
+}
+
+@mixin text-decoration-none() {
+    text-decoration: none;
+}
+
+@mixin text-decoration-overline() {
+    text-decoration: overline;
+}
+
+@mixin text-decoration-solid() {
+    text-decoration: solid;
+}
+
+@mixin text-decoration-underline() {
+    text-decoration: underline;
+}
+
+@mixin text-decoration-wavy() {
+    text-decoration: wavy;
+}

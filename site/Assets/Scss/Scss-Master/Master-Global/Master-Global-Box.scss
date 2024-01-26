@@ -1,0 +1,264 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Box -------------------- //
+
+// Select Box
+
+.select-box {
+
+    // Primary
+
+    &.primary {
+        .custom-select-box-wrapper {
+            @include position-relative;
+
+            @include display-inline-block;
+
+            @include width-100;
+
+            user-select         : none;
+
+            select {
+                @include display-none;
+            }
+
+            .custom-select-box {
+                @include position-relative;
+
+                @include display-inline-block;
+
+                @include width-100;
+
+                &.opened {
+                    .custom-select-box-trigger {
+                        &:after {
+                            transform       : rotate(180deg);
+
+                            transition      : 0.5s ease;
+                        }
+                    }
+
+                    .custom-options {
+                        transform           : translateY(0.5rem);    
+
+                        pointer-events      : all;
+                        visibility          : visible;
+
+                        opacity             : 1;
+                    }
+                }
+
+                .custom-select-box-trigger {
+                    @include position-relative;
+
+                    @include display-block;
+
+                    @include width-100;
+
+                    @include text-align-center;
+
+                    @include p-2;
+
+                    @include font-primary-book;
+                    @include p;
+
+                    @include text-transform-uppercase;
+
+                    line-height         : 1.35;
+
+                    color               : $c-white;
+
+                    background-color    : $c-secondary-normal;
+                    border              : none;
+                    border-radius       : 0.15em;
+
+                    cursor              : pointer;
+
+                    &:after {
+                        @include display-none;
+                    }
+                }
+
+                .custom-options {
+                    @include position-absolute;
+
+                    @include overflow-y-scroll;
+
+                    @include display-block;
+
+                    @include width-100;
+
+                    z-index             : 10;
+
+                    top                 : 100%;
+                    left                : 0;
+
+                    transform           : translateY(1rem);
+
+                    max-height          : 10rem;
+
+                    pointer-events      : none;
+                    visibility          : hidden;
+
+                    opacity             : 0;
+
+                    border              : 1px solid $c-quarter-lighten;
+                    border-radius       : 0;
+
+                    background-color    : $c-tertiary-normal;
+
+                    transition          : 0.5s ease;
+
+                    .option-text {
+                        @include position-relative;
+
+                        @include display-block;
+
+                        @include py-2;
+                        @include px-3;
+
+                        @include font-primary-book;
+                        @include small;
+
+                        cursor                  : pointer;
+
+                        color                   : $c-white;
+
+                        border-bottom           : 1px solid $c-quarter-lighten;
+
+                        transition              : 0.5s ease; 
+
+                        &:last-child {
+                            border              : none;
+                        }
+
+                        &:hover {
+                            background-color    : $c-tertiary-darken;
+
+                            transition          : 0.5s ease;
+                        }
+
+                        &.selected {
+                            background-color    : $c-tertiary-darken;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Input Box
+
+.input-box {
+
+    // Primary
+
+    &.primary {
+        input {
+            @include width-100;
+
+            @include p-3;
+            @include my-1;
+
+            @include font-primary-regular;
+            @include small;
+
+            line-height         : 1.35;
+
+            color               : $c-secondary-normal;
+
+            background-color    : transparent;
+            border              : 1px solid $c-quarter-normal;
+            border-radius       : 0em;
+
+            outline-width       : 0;
+
+            &::placeholder {
+                color           : $c-secondary-normal;
+                opacity         : 1;
+            }
+        }
+    }
+}
+
+// Submit Box
+
+.submit-box {
+
+    // Primary
+
+    &.primary {
+        input {
+            @include position-absolute;
+
+            @include overflow-hidden;
+
+            z-index         : -1;
+
+            opacity         : 0;
+        }
+
+        label {
+            @include display-flex;
+
+            @include overflow-hidden;
+
+            span {
+                @include ellipsis-single;
+
+                @include display-block;
+
+                @include p-3;
+                @include mr-auto;
+
+                @include font-primary-regular;
+                @include small;
+
+                width           : 65%;
+
+                line-height     : 1.35;
+
+                background-color    : $c-white;
+                border              : 1px solid $c-grey;
+                border-radius       : 0.5em;
+            }
+
+            strong {
+                @include ellipsis-single;
+
+                @include p-3;
+
+                @include font-primary-regular;
+                @include small; 
+
+                cursor                  : pointer;
+
+                width                   : 33.5%;
+
+                line-height             : 1.35;
+
+                color                   : $c-white;
+
+                background-color        : $c-grey;
+                border-radius           : 0.5em;
+
+                transition              : 0.5s ease;
+
+                i {
+                    @include pr-2;
+                }
+
+                &:hover, &:focus, &:active {
+                    background-color    : $c-tertiary-normal;
+
+                    transition          : 0.5s ease;
+                }
+            }
+        }
+    }
+}

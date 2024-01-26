@@ -1,0 +1,133 @@
+
+
+// -------------------- Column Properties -------------------- //
+
+@mixin column-properties() {
+    position            : relative;
+    width               : 100%;
+    min-height          : 1%;
+
+    padding             : 0rem 1rem 0rem 1rem;
+}
+
+// -------------------- Column -------------------- //
+
+@mixin col-12() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 100%;
+            flex        : 0 0 100%;
+
+    max-width           : 100%;
+}
+
+@mixin col-11() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 91.66667%;
+            flex        : 0 0 91.66667%;
+
+    max-width           : 91.66667%;
+}
+
+@mixin col-10() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 83.33333%;
+            flex        : 0 0 83.33333%;
+
+    max-width           : 83.33333%;
+}
+
+@mixin col-9() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 75%;
+            flex        : 0 0 75%;
+
+    max-width           : 75%;
+}
+
+@mixin col-8() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 66.66667%;
+            flex        : 0 0 66.66667%;
+
+    max-width           : 66.66667%;
+}
+
+@mixin col-7() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 58.33333%;
+            flex        : 0 0 58.33333%;
+
+    max-width           : 58.33333%;
+}
+
+@mixin col-6() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 50%;
+            flex        : 0 0 50%;
+
+    max-width           : 50%;
+}
+
+@mixin col-5() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 41.66667%;
+            flex        : 0 0 41.66667%;
+
+    max-width           : 41.66667%;
+}
+
+@mixin col-4() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 33.33333%;
+            flex        : 0 0 33.33333%;
+
+    max-width           : 33.33333%;
+}
+
+@mixin col-3() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 25%;
+            flex        : 0 0 25%;
+
+    max-width           : 25%;
+}
+
+@mixin col-2() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 16.66667%;
+            flex        : 0 0 16.66667%;
+
+    max-width           : 16.66667%;
+}
+
+@mixin col-1() {
+    @include column-properties;
+
+    -webkit-box-flex    : 0;
+        -ms-flex        : 0 0 8.33333%;
+            flex        : 0 0 8.33333%;
+
+    max-width           : 8.33333%;
+}

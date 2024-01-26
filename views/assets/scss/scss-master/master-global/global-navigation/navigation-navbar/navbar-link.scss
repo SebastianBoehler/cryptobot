@@ -1,0 +1,23 @@
+
+
+// Utitlities
+
+@import "../../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Navigation - Navbar - Link -------------------- //
+
+.navbar {
+
+    // Primary
+
+    &.navbar-primary {
+        .navbar-brand {
+            @include font-primary-bold;
+            @include h5;
+
+            @include text-transform-uppercase;
+
+            color           : $c-black;
+        }
+    }
+}

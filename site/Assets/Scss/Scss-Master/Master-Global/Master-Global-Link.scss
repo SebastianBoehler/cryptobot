@@ -1,0 +1,133 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Link -------------------- //
+
+.nav-link {
+
+    // For Brand
+
+    &.for-brand {
+        @include px-3;
+
+        @include font-primary-bold;
+        @include h6;
+
+        color               : $c-white;
+    }
+
+    // For Link
+
+    &.for-link {
+        @include position-relative;
+
+        @include py-3;
+        @include px-3;
+
+        @include font-primary-book;
+        @include small;
+
+        color               : $c-secondary;
+
+        &:after {
+            @include position-absolute;
+            
+            @include display-block;
+
+            content: '';
+
+            width           : 0;
+
+            top             : 100%;
+            left            : 0;
+
+            border-bottom   : 2px solid $c-primary-normal;
+
+            transition      : 0.5s ease;
+        }
+
+        i {
+            color           : $c-secondary;
+
+            @include pr-2;
+        }
+
+        &.active {
+            color           : $c-white;
+
+            &:after {
+                @include width-100;
+            }
+
+            i {
+                color       : $c-primary-normal;
+            }
+        }
+
+        &:hover, &:focus, &:active {
+            color           : $c-white;
+
+            &:after {
+                @include width-100;
+
+                transition  : 0.5s ease;
+            }
+
+            i {
+                color       : $c-primary-normal;
+            }
+        }
+    }
+
+    // For Icon
+
+    &.for-icon {
+        @include py-3;
+        @include px-3;
+
+        @include small;
+
+        i {
+            color           : $c-secondary;
+        }
+
+        &:hover, &:focus, &:active {
+            i {
+                color       : $c-primary-normal;
+            }
+        }
+    }
+}
+
+.link-footbar {
+    @include font-primary-book;
+    @include small;
+
+    @include text-decoration-none;
+
+    color               : $c-secondary;
+
+    &:hover, &:focus, &:active {
+        @include text-decoration-none;
+
+        color           : $c-white;
+    }
+}
+
+.link-view-all {
+    @include font-primary-book;
+    @include small;
+
+    @include text-decoration-none;
+
+    color               : $c-secondary;
+
+    &:hover, &:focus, &:active {
+        @include text-decoration-none;
+
+        color           : $c-white;
+    }
+}

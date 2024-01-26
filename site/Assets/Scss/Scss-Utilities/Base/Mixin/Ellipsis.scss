@@ -1,0 +1,46 @@
+
+
+// -------------------- Ellipsis Properties -------------------- //
+
+@mixin ellipsis-single-properties() {
+    display             : block;
+    overflow            : hidden;    
+    text-overflow       : ellipsis;
+}
+
+@mixin ellipsis-multi-properties() {
+    display             : -webkit-box;
+    overflow            : hidden;    
+    text-overflow       : ellipsis;
+    -webkit-box-orient  : vertical;
+}
+
+// -------------------- Ellipsis -------------------- //
+
+@mixin ellipsis-single {
+    @include ellipsis-single-properties;
+
+    white-space         : nowrap;
+    -webkit-line-clamp  : 1;
+}
+
+@mixin ellipsis-double {
+    @include ellipsis-multi-properties;
+
+    white-space         : normal;
+    -webkit-line-clamp  : 2;
+}
+
+@mixin ellipsis-triple {
+    @include ellipsis-multi-properties;
+
+    white-space         : normal;
+    -webkit-line-clamp  : 3;
+}
+
+@mixin ellipsis-quadruple {
+    @include ellipsis-multi-properties;
+
+    white-space         : normal;
+    -webkit-line-clamp  : 4;
+}

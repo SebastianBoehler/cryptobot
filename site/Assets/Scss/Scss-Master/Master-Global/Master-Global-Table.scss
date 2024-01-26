@@ -1,0 +1,167 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Table -------------------- //
+
+.table {
+
+    // Primary
+
+    &.primary {
+        @include display-table;
+
+        tbody {
+            tr {
+                @include align-items-center;
+
+                border-bottom   : 1px solid $c-quarter-normal;
+            }
+
+            td {
+                @include p-3;
+
+                border          : none;
+            
+            }
+
+            .first-col {
+                @include pr-0;
+
+                @include font-primary-semi-bold;
+                @include smallest;
+
+                @include text-transform-uppercase;
+
+                line-height     : 1;
+
+                color           : $c-white;
+            }
+
+            .second-col {
+                @include font-primary-book;
+                @include small;
+
+                line-height     : 1;
+
+                color           : $c-secondary-normal;
+            }
+
+            .third-col {
+                @include font-primary-book;
+                @include small;
+
+                line-height     : 1;
+
+                color           : $c-secondary-normal;
+            }
+        }
+    }
+
+    // Secondary
+
+    &.secondary {
+        @include display-table;
+
+        thead {
+            th {
+                @include p-3;
+
+                border          : none;
+            }
+
+            .first-col {
+                @include px-2;
+
+                @include font-primary-book;
+                @include small;
+
+                @include text-transform-uppercase;
+
+                line-height     : 1.35;
+            }
+
+            .second-col {
+                @include font-primary-book;
+                @include small;
+
+                @include text-transform-uppercase;
+
+                line-height     : 1.35;
+            }
+
+            .third-col {
+                @include font-primary-book;
+                @include small;
+
+                @include text-transform-uppercase;
+
+                line-height     : 1.35;
+            }
+
+            .fourth-col {
+                @include font-primary-book;
+                @include small;
+
+                @include text-transform-uppercase;
+
+                line-height     : 1.35;
+            }
+        }
+
+        tbody {
+            tr {
+                @include align-items-center;
+            }
+
+            td {
+                @include p-3;
+
+                border          : none;
+            
+            }
+
+            .first-col {
+                @include px-2;
+
+                @include font-primary-semi-bold;
+                @include small;
+
+                @include text-transform-uppercase;
+
+                line-height     : 1;
+
+                color           : $c-secondary-normal;
+            }
+
+            .second-col {
+                @include font-primary-semi-bold;
+                @include small;
+
+                line-height     : 1;
+
+                color           : $c-white;
+            }
+
+            .third-col {
+                @include font-primary-semi-bold;
+                @include small;
+
+                line-height     : 1;
+
+                color           : $c-secondary-normal;
+            }
+
+            .fourth-col {
+                @include font-primary-semi-bold;
+                @include small;
+
+                line-height     : 1;
+
+                color           : $c-secondary-normal;
+            }
+        }
+    }
+}

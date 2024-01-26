@@ -1,0 +1,43 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Text -------------------- //
+
+.smallest {
+    @include smallest;
+}
+
+small {
+    @include small;
+}
+
+.small {
+    @include small;
+}
+
+p {
+    @include p;
+}
+
+.p {
+    @include p;
+}
+
+.text-primary {
+    @include font-primary-bold;
+}
+
+.text-secondary {
+    @include font-primary-semi-bold;
+}
+
+.text-tertiary {
+    @include font-primary-book;
+}
+
+.text-quarter {
+    @include font-primary-light;
+}

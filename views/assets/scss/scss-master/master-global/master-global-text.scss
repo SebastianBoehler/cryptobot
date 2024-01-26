@@ -1,0 +1,159 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Text -------------------- //
+
+.smallest {
+    @include smallest;
+}
+
+small {
+    @include small;
+}
+
+.small {
+    @include small;
+}
+
+p {
+    @include p;
+}
+
+.p {
+    @include p;
+}
+
+// Text Size SM //
+
+@include media-breakpoint-down(md) {
+    .h1-sm {
+        font-size   : 2.5rem;
+    }
+
+    .h2-sm {
+        font-size   : 2rem;
+    }
+
+    .h3-sm {
+        font-size   : 1.75rem;
+    }
+
+    .h4-sm {
+        font-size   : 1.5rem;
+    }
+
+    .h5-sm {
+        font-size   : 1.25rem;
+    }
+
+    .h6-sm {
+        font-size   : 1rem;
+    }
+
+    .display-4-sm {
+        font-size   : 3.5rem;
+    }
+
+    .display-3-sm {
+        font-size   : 4.5rem;
+    }
+
+    .display-2-sm {
+        font-size   : 5.5rem;
+    }
+
+    .display-1-sm {
+        font-size   : 6.5rem;
+    }
+}
+
+// Text Size MD //
+
+@include media-breakpoint-up(md) {
+    .h1-md {
+        font-size   : 2.5rem;
+    }
+
+    .h2-md {
+        font-size   : 2rem;
+    }
+
+    .h3-md {
+        font-size   : 1.75rem;
+    }
+
+    .h4-md {
+        font-size   : 1.5rem;
+    }
+
+    .h5-md {
+        font-size   : 1.25rem;
+    }
+
+    .h6-md {
+        font-size   : 1rem;
+    }
+
+    .display-4-md {
+        font-size   : 3.5rem;
+    }
+
+    .display-3-md {
+        font-size   : 4.5rem;
+    }
+
+    .display-2-md {
+        font-size   : 5.5rem;
+    }
+
+    .display-1-md {
+        font-size   : 6.5rem;
+    }
+}
+
+// Text Size LG //
+
+@include media-breakpoint-up(lg) {
+    .h1-lg {
+        font-size   : 2.5rem;
+    }
+
+    .h2-lg {
+        font-size   : 2rem;
+    }
+
+    .h3-lg {
+        font-size   : 1.75rem;
+    }
+
+    .h4-lg {
+        font-size   : 1.5rem;
+    }
+
+    .h5-lg {
+        font-size   : 1.25rem;
+    }
+
+    .h6-lg {
+        font-size   : 1rem;
+    }
+
+    .display-4-lg {
+        font-size   : 3.5rem;
+    }
+
+    .display-3-lg {
+        font-size   : 4.5rem;
+    }
+
+    .display-2-lg {
+        font-size   : 5.5rem;
+    }
+
+    .display-1-lg {
+        font-size   : 6.5rem;
+    }
+}

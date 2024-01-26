@@ -1,0 +1,23 @@
+
+
+// -------------------- Line Clamp -------------------- //
+
+@mixin line-clamp-1() {
+    -webkit-line-clamp: 1;
+}
+
+@mixin line-clamp-2() {
+    -webkit-line-clamp: 2;
+}
+
+@mixin line-clamp-3() {
+    -webkit-line-clamp: 3;
+}
+
+@mixin line-clamp-4() {
+    -webkit-line-clamp: 4;
+}
+
+@mixin line-clamp-5() {
+    -webkit-line-clamp: 5;
+}

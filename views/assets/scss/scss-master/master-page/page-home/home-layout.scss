@@ -1,0 +1,119 @@
+
+
+// Utitlities
+
+@import "../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Page - Home - Layout -------------------- //
+
+.home {
+
+    // Data List
+
+    .data-list {
+
+        // Primary
+
+        &.primary {
+            > .container {
+                @include px-4;
+
+                max-width       : initial;
+            }
+
+            // Content
+
+            .data-list-content {
+                @include mb-5;
+
+                .col-content-outer {
+                    .col-content-inner {
+                        @include px-2;
+                        @include mb-3;
+                        @include mx-auto;
+
+                        &:last-child {
+                            @include mb-0;
+                        }
+                    }
+                }
+            }
+
+            // Footer
+
+            .data-list-footer {
+                @include p-4;
+                @include mx-minus-2;
+
+                background-color        : $c-white;
+
+                border-radius           : 0.5em;
+
+                .footer-form {
+                    form {
+                        @include mb-0;
+                    }
+
+                    .form-wrapper {
+
+                        // Primary
+
+                        &.primary {
+                            @include display-flex;
+
+                            @include align-items-flex-end;
+
+                            justify-content         : space-between;
+
+                            > div {
+                                @include width-100;
+
+                                @include mr-4;
+
+                                &:last-child {
+                                    @include mr-0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+
+                > .container {
+                    @include pt-5;
+                }
+
+                // Footer
+
+                .data-list-footer {
+                    .footer-form {
+                        form {
+                            @include mb-0;
+                        }
+
+                        .form-wrapper {
+
+                            // Primary
+
+                            &.primary {
+                                @include display-block;
+
+                                > div {
+                                    @include width-100;
+
+                                    @include mr-4;
+
+                                    &:last-child {
+                                        @include mr-0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

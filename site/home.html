@@ -1,0 +1,1410 @@
+﻿<!--<!DOCTYPE html>-->
+
+<html>
+<head>
+
+    <!-- Title -->
+
+    <title>
+        Website Boehler Trading
+    </title>
+
+    <!-- Meta -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!------- CSS ------->
+
+    <link rel="stylesheet" href="Assets/Css/Vendor/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/Css/Vendor/Font-Awesome.css">
+
+    <link rel="stylesheet" href="Assets/Css/Vendor/Animation-On-Scroll.css">
+    <link rel="stylesheet" href="Assets/Css/Vendor/Magnific-Popup.css">
+    <link rel="stylesheet" href="Assets/Css/Vendor/Chart.css">
+
+    <link rel="stylesheet" href="Assets/Css/Css-Master.css">
+</head>
+
+<!-- Desktop -->
+
+<body class="desktop default">
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-master navbar-expand-lg">
+        <a class="nav-link for-brand text-uppercase" href="#">
+            Boehler Trading
+        </a>
+        <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link for-link active" href="#">
+                        <i class="fas fa-home"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" href="#">
+                        <i class="fab fa-stack-exchange"></i>Exchange
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" onclick="openLink('/analytics')">
+                        <i class="fas fa-chart-area"></i>Analytics
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" href="#">
+                        <i class="fas fa-exchange-alt"></i>Convert
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-link" href="#">
+                        <i class="fas fa-desktop"></i>Helpdesk
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link for-icon" href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-icon" href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link for-icon" href="#">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+                <li class="nav-item ml-0 ml-md-0 ml-lg-4">
+                    <a class="btn btn-block btn-wallet" href="#">
+                        <i class="fas fa-cog"></i> Wallet
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+
+    <div class="page-content-wrapper mb-4 mb-md-4 mb-lg-4">
+        <div class="container-fluid py-5 py-md-5 py-lg-4">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 order-1 order-md-2 order-lg-1">
+
+                    <!--Section market-->
+
+                    <div class="section section-market">
+                        <div class="market-header">
+                            <div class="text">
+                                <div class="text-title">
+                                    <h3 class="h6 text-tertiary color-white">
+                                        Market
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="market-content">
+                            <div class="content-holding">
+                                <div class="row">
+                                    <div class="col-6 col-md-6 col-lg-6">
+                                        <div class="text">
+                                            <div class="text-subtitle">
+                                                <h4 class="small text-secondary text-uppercase color-secondary">
+                                                    Account balance
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-6" style="display: none;">
+                                        <div class="nav-tab primary">
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-btc-tab" data-toggle="pill" href="#pills-btc" role="tab" aria-controls="pills-btc" aria-selected="true">
+                                                        BTC
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-usd-tab" data-toggle="pill" href="#pills-usd" role="tab" aria-controls="pills-usd" aria-selected="false">
+                                                        USD
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-eur-tab" data-toggle="pill" href="#pills-eur" role="tab" aria-controls="pills-eur" aria-selected="false">
+                                                        EUR
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="nav-tab primary">
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-btc" role="tabpanel" aria-labelledby="pills-btc-tab">
+                                                    <div class="text">
+                                                        <div class="text-amount">
+                                                            <p class="text-secondary color-green" id="balance">
+                                                                <i class="fab fa-bitcoin pr-1"></i>56,430.10
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-usd" role="tabpanel" aria-labelledby="pills-usd-tab">
+                                                    <div class="text">
+                                                        <div class="text-amount">
+                                                            <p class="text-secondary color-green">
+                                                                <i class="fas fa-dollar-sign pr-1"></i>56,430.10
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-eur" role="tabpanel" aria-labelledby="pills-eur-tab">
+                                                    <div class="text">
+                                                        <div class="text-amount">
+                                                            <p class="text-secondary color-green">
+                                                                <i class="fas fa-euro-sign pr-1"></i>56,430.10
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-exchange">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="nav-tab secondary">
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-basic-tab" data-toggle="pill" href="#pills-basic" role="tab" aria-controls="pills-basic" aria-selected="true">
+                                                        Basic
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-graph-tab" data-toggle="pill" href="#pills-graph" role="tab" aria-controls="pills-graph" aria-selected="false">
+                                                        Graph
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-basic" role="tabpanel" aria-labelledby="pills-basic-tab">
+                                                    <div class="exchange-basic">
+                                                        <div class="basic-search">
+                                                            <div class="input-box primary">
+                                                                <input type="text" placeholder="Search" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="basic-favourite">
+                                                            <div class="favourite-header">
+                                                                <div class="text">
+                                                                    <div class="text-title">
+                                                                        <h3 class="h6 text-tertiary color-white">
+                                                                            Favourite
+                                                                        </h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="favourite-content">
+                                                                <div class="nav-tab tertiary">
+                                                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link active" id="pills-bgn-inner-tab" data-toggle="pill" href="#pills-bgn-inner" role="tab" aria-controls="pills-bgn-inner" aria-selected="true">
+                                                                                BGN
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" id="pills-usd-inner-tab" data-toggle="pill" href="#pills-usd-inner" role="tab" aria-controls="pills-usd-inner" aria-selected="false">
+                                                                                USD
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" id="pills-eur-inner-tab" data-toggle="pill" href="#pills-eur-inner" role="tab" aria-controls="pills-eur-inner" aria-selected="false">
+                                                                                EUR
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" id="pills-btc-inner-tab" data-toggle="pill" href="#pills-btc-inner" role="tab" aria-controls="pills-btc-inner" aria-selected="true">
+                                                                                BTC
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="tab-content" id="pills-tabContent">
+                                                                        <div class="tab-pane fade show active" id="pills-bgn-inner" role="tabpanel" aria-labelledby="pills-bgn-inner-tab">
+                                                                            <table class="table primary table-responsive">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-usd-inner" role="tabpanel" aria-labelledby="pills-usd-inner-tab">
+                                                                            <table class="table primary table-responsive">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-eur-inner" role="tabpanel" aria-labelledby="pills-eur-inner-tab">
+                                                                            <table class="table primary table-responsive">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-btc-inner" role="tabpanel" aria-labelledby="pills-btc-inner-tab">
+                                                                            <table class="table primary table-responsive">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="first-col">
+                                                                                            <i class="fas fa-bookmark pr-1"></i>BTC - Dash
+                                                                                        </td>
+                                                                                        <td class="second-col">
+                                                                                            1234.5678.910
+                                                                                        </td>
+                                                                                        <td class="third-col">
+                                                                                            12.000043%
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-graph" role="tabpanel" aria-labelledby="pills-graph-tab">
+                                                    <div class="exchange-graph">
+                                                        <div class="graph-search">
+                                                            <div class="input-box primary">
+                                                                <input type="text" placeholder="Search" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="graph-favourite">
+                                                            <div class="favourite-header">
+                                                                <div class="text">
+                                                                    <div class="text-title">
+                                                                        <h3 class="h6 text-tertiary color-white">
+                                                                            Favourite
+                                                                        </h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="favourite-content">
+                                                                <div class="nav-tab tertiary">
+                                                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link active" id="pills-bgn-inner-tab" data-toggle="pill" href="#pills-bgn-inner" role="tab" aria-controls="pills-bgn-inner" aria-selected="true">
+                                                                                BGN
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" id="pills-usd-inner-tab" data-toggle="pill" href="#pills-usd-inner" role="tab" aria-controls="pills-usd-inner" aria-selected="false">
+                                                                                USD
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" id="pills-eur-inner-tab" data-toggle="pill" href="#pills-eur-inner" role="tab" aria-controls="pills-eur-inner" aria-selected="false">
+                                                                                EUR
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" id="pills-btc-inner-tab" data-toggle="pill" href="#pills-btc-inner" role="tab" aria-controls="pills-btc-inner" aria-selected="true">
+                                                                                BTC
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="tab-content" id="pills-tabContent">
+                                                                        <div class="tab-pane fade show active" id="pills-bgn-inner" role="tabpanel" aria-labelledby="pills-bgn-inner-tab">
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-md-12 col-lg-12">
+                                                                                    <div class="graph-favourite-card primary">
+                                                                                        <div class="graph-favourite-text">
+                                                                                            <div class="row mx-0 mx-md-0 mx-lg-0">
+                                                                                                <div class="col-6 col-md-6 col-lg-6">
+                                                                                                    <div class="text-title">
+                                                                                                        <h3 class="p text-tertiary color-white">
+                                                                                                            USD / BTC
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div class="text-amount">
+                                                                                                        <p class="small text-tertiary color-secondary">
+                                                                                                            0.913
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="text-right col-6 col-md-6 col-lg-6">
+                                                                                                    <div class="text-precentage">
+                                                                                                        <p class="small text-tertiary color-green">
+                                                                                                            6.01%
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <canvas id="GraphFavouriteGreen"></canvas>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-md-12 col-lg-12">
+                                                                                    <div class="graph-favourite-card primary">
+                                                                                        <div class="graph-favourite-text">
+                                                                                            <div class="row mx-0 mx-md-0 mx-lg-0">
+                                                                                                <div class="col-6 col-md-6 col-lg-6">
+                                                                                                    <div class="text-title">
+                                                                                                        <h3 class="p text-tertiary color-white">
+                                                                                                            USD / BTC
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div class="text-amount">
+                                                                                                        <p class="small text-tertiary color-secondary">
+                                                                                                            0.913
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="text-right col-6 col-md-6 col-lg-6">
+                                                                                                    <div class="text-precentage">
+                                                                                                        <p class="small text-tertiary color-red">
+                                                                                                            6.01%
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <canvas id="GraphFavouriteRed"></canvas>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-usd-inner" role="tabpanel" aria-labelledby="pills-usd-inner-tab">
+
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-eur-inner" role="tabpanel" aria-labelledby="pills-eur-inner-tab">
+
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-btc-inner" role="tabpanel" aria-labelledby="pills-btc-inner-tab">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 order-2 order-md-1 order-lg-2 px-3 px-md-3 px-lg-1 my-4 my-md-4 my-lg-0">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12 mb-4 mb-md-4 mb-lg-4">
+
+                            <!--Section Chart-->
+
+                            <div class="section section-chart" id="chart-section">
+                                <div class="chart-header">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-4 col-lg-4 mb-4 mb-md-0 mb-lg-0">
+                                            <div class="row align-items-center">
+                                                <div class="col-5 col-md-5 col-lg-5">
+                                                    <div class="select-box primary">
+                                                        <select name="sources" id="sources" class="custom-select-box sources" placeholder="XRP">
+                                                            <option value="Font Family 1">
+                                                                XRP
+                                                            </option>
+                                                            <option value="Font Family 2">
+                                                                BGN
+                                                            </option>
+                                                            <option value="Font Family 3">
+                                                                EUR
+                                                            </option>
+                                                            <option value="Font Family 4">
+                                                                USD
+                                                            </option>
+                                                            <option value="Font Family 4">
+                                                                BTC
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center col-2 col-md-2 col-lg-2 px-0 px-md-0 px-lg-0">
+                                                    <div class="button">
+                                                        <a class="btn btn-swap" href="#">
+                                                            <i class="fas fa-exchange-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 col-md-5 col-lg-5">
+                                                    <div class="select-box primary">
+                                                        <select name="sources" id="sources" class="custom-select-box sources" placeholder="XRP">
+                                                            <option value="Font Family 1">
+                                                                XRP
+                                                            </option>
+                                                            <option value="Font Family 2">
+                                                                BGN
+                                                            </option>
+                                                            <option value="Font Family 3">
+                                                                EUR
+                                                            </option>
+                                                            <option value="Font Family 4">
+                                                                USD
+                                                            </option>
+                                                            <option value="Font Family 4">
+                                                                BTC
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8 col-lg-8">
+                                            <div class="row">
+                                                <div class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                    <div class="text">
+                                                        <div class="text-subtitle">
+                                                            <h4 class="small text-tertiary color-secondary">
+                                                                Today's Profit
+                                                            </h4>
+                                                        </div>
+                                                        <div class="text-amount">
+                                                            <p class="text-tertiary" id="todaysProfit">
+                                                                0.913
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3 mb-2 mb-md-0 mb-lg-0">
+                                                    <div class="text">
+                                                        <div class="text-subtitle">
+                                                            <h4 class="small text-tertiary color-secondary">
+                                                                Live Profit
+                                                            </h4>
+                                                        </div>
+                                                        <div class="text-amount">
+                                                            <p class="text-tertiary" id="liveProfit">
+                                                                6.01%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                    <div class="text">
+                                                        <div class="text-subtitle">
+                                                            <h4 class="small text-tertiary color-secondary">
+                                                                General Profit
+                                                            </h4>
+                                                        </div>
+                                                        <div class="text-amount">
+                                                            <p class="text-tertiary" id="generalProfit">
+                                                                0.7513
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center text-md-left text-lg-left col-6 col-md-3 col-lg-3">
+                                                    <div class="text">
+                                                        <div class="text-subtitle">
+                                                            <h4 class="small text-tertiary color-secondary">
+                                                                Market Cap
+                                                            </h4>
+                                                        </div>
+                                                        <div class="text-amount">
+                                                            <p class="text-tertiary color-white" id="volume">
+                                                                1.1433.876.00
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-content my-4 my-md-4 my-lg-4">
+                                    <div class="content-graph">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12 col-lg-12">
+                                                <div class="nav-tab secondary">
+                                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="pills-chart-tab" data-toggle="pill" href="#pills-chart" role="tab" aria-controls="pills-chart" aria-selected="true">
+                                                                Analytic Chart
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="pills-candle-tab" data-toggle="pill" href="#pills-candle" role="tab" aria-controls="pills-candle" aria-selected="false">
+                                                                Basic Chart
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="pills-chart" role="tabpanel" aria-labelledby="pills-chart-tab">
+                                                            <div class="row mt-4 mt-md-4 mt-lg-4">
+                                                                <div class="col-12 col-md-12 col-lg-12">
+                                                                    <canvas id="GraphChart"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-candle" role="tabpanel" aria-labelledby="pills-candle-tab">
+                                                            <div class="row mt-4 mt-md-4 mt-lg-4">
+                                                                <div class="col-12 col-md-12 col-lg-12">
+                                                                    <canvas id="GraphCandle"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-footer">
+                                    <div class="row">
+                                        <div class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                            <div class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                <div class="text-subtitle">
+                                                    <h4 class="small text-tertiary color-secondary">
+                                                        Last Price
+                                                    </h4>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small d-flex align-items-center text-tertiary color-white" id="lastPrice">
+                                                        1245.654331<i class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                            <div class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                <div class="text-subtitle">
+                                                    <h4 class="small text-tertiary color-secondary">
+                                                        Last Change
+                                                    </h4>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small d-flex align-items-center text-tertiary color-white" id="lastChange"> 
+                                                        25.64204%<i class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                            <div class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                <div class="text-subtitle">
+                                                    <h4 class="small text-tertiary color-secondary">
+                                                        Volatility (24H)
+                                                    </h4>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small d-flex align-items-center text-tertiary color-white" id="volatility">
+                                                        25.64204%<i class="fas fa-arrow-alt-circle-up ml-auto ml-md-auto ml-lg-auto"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md col-lg pr-lg-0 mb-2 mb-md-0 mb-lg-0">
+                                            <div class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                <div class="text-subtitle">
+                                                    <h4 class="small text-tertiary color-secondary">
+                                                        Highest (24H)
+                                                    </h4>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small d-flex align-items-center text-tertiary color-white" id="24Highest">
+                                                        25.64204%<i class="fas fa-arrow-alt-circle-down ml-auto ml-md-auto ml-lg-auto"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md col-lg">
+                                            <div class="text border-quarter p-3 p-md-2 p-lg-2">
+                                                <div class="text-subtitle">
+                                                    <h4 class="small text-tertiary color-secondary">
+                                                        Lowest (24H)
+                                                    </h4>
+                                                </div>
+                                                <div class="text-amount">
+                                                    <p class="small d-flex align-items-center text-tertiary color-white" id="24Lowest">
+                                                        25.64204%<i class="fas fa-arrow-alt-circle-right ml-auto ml-md-auto ml-lg-auto"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+
+                            <!--Section Order-->
+
+                            <div class="section section-order">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0 mb-lg-0">
+                                        <div class="order-sell">
+                                            <div class="sell-header">
+                                                <div class="row align-items-center">
+                                                    <div class="col-6 col-md-6 col-lg-6">
+                                                        <div class="text">
+                                                            <div class="text-title">
+                                                                <h3 class="h6 text-tertiary color-white">
+                                                                    Sell Orders
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right col-6 col-md-6 col-lg-6">
+                                                        <div class="text">
+                                                            <div class="text-amount">
+                                                                <p class="small text-tertiary color-secondary" id="totalText">
+                                                                    Total XRP:
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sell-content">
+                                                <table class="table secondary table-striped table-responsive">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="first-col" scope="col">
+                                                                <span class="d-block color-white">Profit</span>
+                                                                <span class="d-block color-secondary">%</span>
+                                                            </th>
+                                                            <th class="second-col" scope="col">
+                                                                <span class="d-block color-white">Amount</span>
+                                                                <span class="d-block color-secondary" id="baseCurrency2">USD</span>
+                                                            </th>
+                                                            <th class="third-col" scope="col">
+                                                                <span class="d-block color-white">Price</span>
+                                                                <span class="d-block color-secondary" id="product2">XRP</span>
+                                                            </th>
+                                                            <th class="fourth-col" scope="col">
+                                                                <span class="d-block color-white">Status</span>
+                                                                <span class="d-block color-secondary">-</span>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="sellTransactions">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="order-buy">
+                                            <div class="buy-header">
+                                                <div class="row align-items-center">
+                                                    <div class="col-6 col-md-6 col-lg-6">
+                                                        <div class="text">
+                                                            <div class="text-title">
+                                                                <h3 class="h6 text-tertiary color-white">
+                                                                    Buy Orders
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right col-6 col-md-6 col-lg-6">
+                                                        <div class="text">
+                                                            <div class="text-amount">
+                                                                <p class="small text-tertiary color-secondary" id="totalText2">
+                                                                    Total XRP:
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="buy-content">
+                                                <table class="table secondary table-striped table-responsive">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="first-col" scope="col">
+                                                                <span class="d-block color-white">Time</span>
+                                                                <span class="d-block color-secondary">mm:hh</span>
+                                                            </th>
+                                                            <th class="second-col" scope="col">
+                                                                <span class="d-block color-white">Amount</span>
+                                                                <span class="d-block color-secondary" id="baseCurrency">USD</span>
+                                                            </th>
+                                                            <th class="third-col" scope="col">
+                                                                <span class="d-block color-white">Price</span>
+                                                                <span class="d-block color-secondary" id="product">XRP</span>
+                                                            </th>
+                                                            <th class="fourth-col" scope="col">
+                                                                <span class="d-block color-white">Status</span>
+                                                                <span class="d-block color-secondary">-</span>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="buyTransactions">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 order-3 order-md-3 order-lg-3">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12 mb-4 mb-md-4 mb-lg-4">
+                            
+                            <!--Section Buy Sell-->
+
+                            <div class="section section-buy-sell">
+                                <div class="buy-sell-content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="nav-tab quarter">
+                                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="pills-buy-tab" data-toggle="pill" href="#pills-buy" role="tab" aria-controls="pills-buy" aria-selected="true">
+                                                            Buy
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="pills-sell-tab" data-toggle="pill" href="#pills-sell" role="tab" aria-controls="pills-sell" aria-selected="false">
+                                                            Sell
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
+                                                        <div class="content-buy">
+                                                            <div class="buy-price">
+                                                                <div class="input-box primary">
+                                                                    <label class="small text-tertiary text-uppercase color-secondary">
+                                                                        Price
+                                                                    </label>
+                                                                    <input type="text" placeholder="" />
+                                                                    <label class="small text-quarter color-secondary">
+                                                                        You will spend: <span class="text-secondary color-secondary"><i class="fas fa-dollar-sign pr-1"></i>59,440.10</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="buy-amount">
+                                                                <div class="input-box primary">
+                                                                    <label class="small text-tertiary text-uppercase color-secondary">
+                                                                        Amount
+                                                                    </label>
+                                                                    <input type="text" placeholder="" />
+                                                                    <label class="small text-quarter color-secondary">
+                                                                        You will get: <span class="text-secondary color-secondary"><i class="fas fa-dollar-sign pr-1"></i>59,440.10</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="buy-text">
+                                                                <div class="text-amount">
+                                                                    <h6 class="p text-tertiary text-uppercase color-white">
+                                                                        Total - <span>0.00000000</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <div class="button">
+                                                                    <a class="btn btn-block btn-buy" href="#">
+                                                                        Place Buy Order
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab">
+                                                        <div class="content-sell">
+                                                            <div class="sell-price">
+                                                                <div class="input-box primary">
+                                                                    <label class="small text-quarter text-uppercase color-secondary">
+                                                                        Price
+                                                                    </label>
+                                                                    <input type="text" placeholder="" />
+                                                                    <label class="small text-quarter color-secondary">
+                                                                        You will spend: <span class="text-secondary color-secondary"><i class="fas fa-dollar-sign pr-1"></i>59,440.10</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sell-amount">
+                                                                <div class="input-box primary">
+                                                                    <label class="small text-quarter text-uppercase color-secondary">
+                                                                        Amount
+                                                                    </label>
+                                                                    <input type="text" placeholder="" />
+                                                                    <label class="small text-quarter color-secondary">
+                                                                        You will get: <span class="text-secondary color-secondary"><i class="fas fa-dollar-sign pr-1"></i>59,440.10</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sell-text">
+                                                                <div class="text-amount">
+                                                                    <h6 class="p text-tertiary text-uppercase color-white">
+                                                                        Total - <span>0.00000000</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sell-button">
+                                                                <div class="button">
+                                                                    <a class="btn btn-block btn-buy" href="#">
+                                                                        Sell Order
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+
+                            <!--Section History-->
+
+                            <div class="section section-history">
+                                <div class="activity-header">
+                                    <div class="row align-items-center">
+                                        <div class="col-7 col-md-7 col-lg-7">
+                                            <div class="text">
+                                                <div class="text-title">
+                                                    <h3 class="h6 text-tertiary color-white">
+                                                        History Data
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-right col-5 col-md-5 col-lg-5">
+                                            <div class="link">
+                                                <a class="link-view-all" href="#">
+                                                    View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="history-card primary">
+                                                <div class="row align-items-center">
+                                                    <div class="col-2 col-md-2 col-lg-2">
+                                                        <div class="history-icon">
+                                                            <a href="#">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 col-md-10 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-7 col-md-7 col-lg-7">
+                                                                <div class="history-text">
+                                                                    <div class="text-subtitle">
+                                                                        <h4 class="small text-quarter text-truncate color-secondary">
+                                                                            You've Withdrawed
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right col-5 col-md-5 col-lg-5 pl-0 pl-md-0 pl-lg-0">
+                                                                <div class="history-text">
+                                                                    <div class="text-date">
+                                                                        <p class="small text-quarter color-secondary">
+                                                                            Today, 4:15PM
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="history-text">
+                                                                    <div class="text-amount">
+                                                                        <p class="small text-secondary color-white">
+                                                                            1,265.00 XRP
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="history-card primary">
+                                                <div class="row align-items-center">
+                                                    <div class="col-2 col-md-2 col-lg-2">
+                                                        <div class="history-icon">
+                                                            <a href="#">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 col-md-10 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-7 col-md-7 col-lg-7">
+                                                                <div class="history-text">
+                                                                    <div class="text-subtitle">
+                                                                        <h4 class="small text-quarter text-truncate color-secondary">
+                                                                            You've Converted
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right col-5 col-md-5 col-lg-5 pl-0 pl-md-0 pl-lg-0">
+                                                                <div class="history-text">
+                                                                    <div class="text-date">
+                                                                        <p class="small text-quarter color-secondary">
+                                                                            Today, 5:12PM
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="history-text">
+                                                                    <div class="text-amount">
+                                                                        <p class="small text-secondary color-white">
+                                                                            100 USD to 56,54 XRP
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="history-card primary">
+                                                <div class="row align-items-center">
+                                                    <div class="col-2 col-md-2 col-lg-2">
+                                                        <div class="history-icon">
+                                                            <a href="#">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 col-md-10 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-7 col-md-7 col-lg-7">
+                                                                <div class="history-text">
+                                                                    <div class="text-subtitle">
+                                                                        <h4 class="small text-quarter text-truncate color-secondary">
+                                                                            You've Withdrawed
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right col-5 col-md-5 col-lg-5 pl-0 pl-md-0 pl-lg-0">
+                                                                <div class="history-text">
+                                                                    <div class="text-date">
+                                                                        <p class="small text-quarter color-secondary">
+                                                                            Today, 4:15PM
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="history-text">
+                                                                    <div class="text-amount">
+                                                                        <p class="small text-secondary color-white">
+                                                                            1,265.00 XRP
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="history-card primary">
+                                                <div class="row align-items-center">
+                                                    <div class="col-2 col-md-2 col-lg-2">
+                                                        <div class="history-icon">
+                                                            <a href="#">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 col-md-10 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-7 col-md-7 col-lg-7">
+                                                                <div class="history-text">
+                                                                    <div class="text-subtitle">
+                                                                        <h4 class="small text-quarter text-truncate color-secondary">
+                                                                            You've Converted
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right col-5 col-md-5 col-lg-5 pl-0 pl-md-0 pl-lg-0">
+                                                                <div class="history-text">
+                                                                    <div class="text-date">
+                                                                        <p class="small text-quarter color-secondary">
+                                                                            Today, 5:12PM
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="history-text">
+                                                                    <div class="text-amount">
+                                                                        <p class="small text-secondary color-white">
+                                                                            100 USD to 56,54 XRP
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="history-card primary">
+                                                <div class="row align-items-center">
+                                                    <div class="col-2 col-md-2 col-lg-2">
+                                                        <div class="history-icon">
+                                                            <a href="#">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 col-md-10 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-7 col-md-7 col-lg-7">
+                                                                <div class="history-text">
+                                                                    <div class="text-subtitle">
+                                                                        <h4 class="small text-quarter text-truncate color-secondary">
+                                                                            You've Withdrawed
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right col-5 col-md-5 col-lg-5 pl-0 pl-md-0 pl-lg-0">
+                                                                <div class="history-text">
+                                                                    <div class="text-date">
+                                                                        <p class="small text-quarter color-secondary">
+                                                                            Today, 4:15PM
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="history-text">
+                                                                    <div class="text-amount">
+                                                                        <p class="small text-secondary color-white">
+                                                                            1,265.00 XRP
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="history-card primary">
+                                                <div class="row align-items-center">
+                                                    <div class="col-2 col-md-2 col-lg-2">
+                                                        <div class="history-icon">
+                                                            <a href="#">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 col-md-10 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-7 col-md-7 col-lg-7">
+                                                                <div class="history-text">
+                                                                    <div class="text-subtitle">
+                                                                        <h4 class="small text-quarter text-truncate color-secondary">
+                                                                            You've Withdrawed
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right col-5 col-md-5 col-lg-5 pl-0 pl-md-0 pl-lg-0">
+                                                                <div class="history-text">
+                                                                    <div class="text-date">
+                                                                        <p class="small text-quarter color-secondary">
+                                                                            Today, 4:15PM
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-12 col-lg-12">
+                                                                <div class="history-text">
+                                                                    <div class="text-amount">
+                                                                        <p class="small text-secondary color-white">
+                                                                            1,265.00 XRP
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footbar -->
+
+    <footer class="footbar footbar-master">
+        <div class="container py-5 py-md-5 py-lg-5">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-10 mx-0 mx-md-auto mx-lg-auto">
+                    <div class="row">
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    About Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    Imprint
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    FAQ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center col">
+                            <div class="link">
+                                <a class="link-footbar" href="#">
+                                    Disclaimer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footbar footbar-copyright">
+        <div class="container py-3 py-md-3 py-lg-3">
+            <div class="row">
+                <div class="text-center col-12 col-md-12 col-lg-12">
+                    <div class="text">
+                        <div class="text-copyright">
+                            <p class="small text-tertiary color-white">
+                                © 2020 Copyright: Boehler Trading
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------- Script ------->
+
+    <script src="Assets/JavaScript/Jquery.min.js"></script>
+    <script src="Assets/JavaScript/AOS.min.js"></script>
+
+    <script src="Assets/JavaScript/Vendor-Javascript.js"></script>
+    <script src="Assets/JavaScript/Custom-Javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+﻿<!--<!DOCTYPE html>-->
+
+<html>
+
+<head>
+
+    <!-- Title -->
+
+    <title>
+        BoehlerTrading Dashboard
+    </title>
+
+    <!-- Meta -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!------- CSS ------->
+
+    <link rel="stylesheet" href="assets/css/css-master.min.css">
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index2.js"></script>
+</head>
+
+<!-- Desktop -->
+
+<body>
+
+    <div class="content">
+
+        <!--Navbar-->
+
+        <nav class="navbar navbar-primary navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    Boehler IO
+                </a>
+            </div>
+        </nav>
+
+        <!--Page-->
+
+        <div class="page">
+
+            <!--Home-->
+
+            <div class="home">
+
+                <!--Data List - Primary-->
+
+                <section class="section data-list primary">
+                    <div class="container">
+
+                        <!--Content Section-->
+
+                        <div class="data-list-content">
+                            <div class="row">
+                                <div class="col-content-outer col-12 col-md-12 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-content-inner col-12 col-md-6 col-lg-3">
+                                            <div class="data-card primary">
+                                                <div class="card-wrapper primary">
+                                                    <div class="data-card-header">
+                                                        <div class="header-text">
+                                                            <div class="title">
+                                                                <h3>
+                                                                    OVERVIEW
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-button">
+                                                            <div class="button">
+                                                                <a class="btn btn-block btn-header" href="#"
+                                                                    id="status">
+                                                                    OFFLINE
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="data-card-content">
+                                                        <div class="content-text">
+                                                            <div class="desc">
+                                                                <div class="desc-wrapper">
+                                                                    <p>
+                                                                        <span>
+                                                                            Profit
+                                                                        </span>
+                                                                        <span class="plus" id="profit">
+                                                                            -
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="desc-wrapper">
+                                                                    <p>
+                                                                        <span>
+                                                                            Ratio
+                                                                        </span>
+                                                                        <span id="ratio">
+                                                                            -
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="desc-wrapper">
+                                                                    <p>
+                                                                        <span>
+                                                                            Transactions
+                                                                        </span>
+                                                                        <span id="trx">
+                                                                            -
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="desc-wrapper">
+                                                                    <p>
+                                                                        <span>
+                                                                            ROI
+                                                                        </span>
+                                                                        <span id="roi">
+                                                                            -
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data-card-footer">
+                                                    <div class="footer-text">
+                                                        <div class="caption">
+                                                            <span style="font-size: 10; opacity: 0.35;" id="machineID">
+                                                                [ device identifier ]
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Footer Section-->
+
+                        <div class="data-list-footer">
+                            <div class="footer-form">
+                                <form>
+                                    <div class="form-wrapper primary">
+                                        <div class="form-group">
+                                            <label>
+                                                Max Leverage
+                                            </label>
+                                            <input type="number" class="form-control" id="leverage" value="5" min="1"
+                                                max="10" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                Start Amount
+                                            </label>
+                                            <input type="number" class="form-control" id="amount" placeholder="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                Discord Webhook
+                                            </label>
+                                            <input type="url" class="form-control" id="webhook" placeholder="" />
+                                        </div>
+                                        <div class="form-button">
+                                            <div class="button">
+                                                <a class="btn btn-block btn-form" href="#" id="saveBtn"
+                                                    onclick="save()">
+                                                    Save
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div style="margin-top: 60px;" class="data-list-footer">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container" style="margin-bottom: -100px;">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <script type="text/javascript"
+                                    src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
+                                    async>
+                                    {
+                                        "interval": "15m",
+                                        "width": "100%",
+                                        "isTransparent": false,
+                                        "height": "70%",
+                                        "symbol": "BINANCE:BTCUSDTPERP",
+                                        "showIntervalTabs": true,
+                                        "locale": "de_DE",
+                                        "colorTheme": "light"
+                                    }
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                    </div>
+                </section>
+
+                <div class="wrapper">
+
+                    <!--Section Group-->
+
+                    <div class="section-group">
+
+                        <!--Signal List-->
+
+                        <div class="section signal-list">
+                            <div class="container">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footbar-->
+
+        <footer></footer>
+    </div>
+
+    <!------- Script ------->
+
+    <script src="assets/javascript/vendor-javascript.js"></script>
+    <script src="assets/javascript/custom-javascript.js"></script>
+</body>
+
+</html>

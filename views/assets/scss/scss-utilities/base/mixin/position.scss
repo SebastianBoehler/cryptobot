@@ -1,0 +1,35 @@
+
+
+// -------------------- Position -------------------- //
+
+@mixin position-absolute() {
+    position: absolute;
+}
+
+@mixin position-center() {
+    position: center;
+}
+
+@mixin position-fixed() {
+    position: fixed;
+}
+
+@mixin position-page() {
+    position: page;
+}
+
+@mixin position-relative() {
+    position: relative;
+}
+
+@mixin position-static() {
+    position: static;
+}
+
+@mixin position-sticky() {
+    position: sticky;
+}
+
+@mixin position-unset() {
+    position: unset;
+}

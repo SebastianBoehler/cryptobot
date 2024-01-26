@@ -1,0 +1,112 @@
+[
+   {
+      "price": "1.3866",
+      "time": 1615326108993,
+      "timestamp": "9.3.2021, 22:41:48",
+      "type": "Long Entry",
+      "details": [
+         1.3255920350482269
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "1.327",
+      "time": 1615412364670,
+      "timestamp": "10.3.2021, 22:39:24",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         1.3381497850278252
+      ],
+      "holdLength": "1437.5946166666665min",
+      "upTrend": false
+   },
+   {
+      "price": "1.3289",
+      "time": 1615412422733,
+      "timestamp": "10.3.2021, 22:40:22",
+      "type": "Long Entry",
+      "details": [
+         1.3378953584979345
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "1.3274",
+      "time": 1615412649869,
+      "timestamp": "10.3.2021, 22:44:09",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         1.3377246691593516
+      ],
+      "holdLength": "3.7856min",
+      "upTrend": false
+   },
+   {
+      "price": "1.3293",
+      "time": 1615412709075,
+      "timestamp": "10.3.2021, 22:45:09",
+      "type": "Long Entry",
+      "details": [
+         1.337838099489388
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "1.3264",
+      "time": 1615413015739,
+      "timestamp": "10.3.2021, 22:50:15",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         1.3380427099167784
+      ],
+      "holdLength": "5.111066666666667min",
+      "upTrend": false
+   },
+   {
+      "price": "1.3288",
+      "time": 1615413408408,
+      "timestamp": "10.3.2021, 22:56:48",
+      "type": "Long Entry",
+      "details": [
+         1.3378110088381887
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "1.3293",
+      "time": 1615413467420,
+      "timestamp": "10.3.2021, 22:57:47",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         1.3376938770035074
+      ],
+      "holdLength": "0.9835333333333334min",
+      "upTrend": false
+   },
+   {
+      "price": "1.3299",
+      "time": 1615413632639,
+      "timestamp": "10.3.2021, 23:00:32",
+      "type": "Long Entry",
+      "details": [
+         1.337884267114354
+      ],
+      "upTrend": false
+   },
+   {
+      "price": "1.329",
+      "time": 1615413750241,
+      "timestamp": "10.3.2021, 23:02:30",
+      "type": "Long Exit",
+      "profit": null,
+      "details": [
+         1.3378776058330688
+      ],
+      "holdLength": "1.9600333333333333min",
+      "upTrend": false
+   }
+]

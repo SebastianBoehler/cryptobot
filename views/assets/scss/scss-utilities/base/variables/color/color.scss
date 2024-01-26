@@ -1,0 +1,63 @@
+
+
+// -------------------- Color Variable -------------------- //
+
+// ---------- Color Theme
+
+$c-primary              : #3D4CEB;
+$c-secondary            : #3AB0FA;
+$c-tertiary             : #F4F5FC;
+
+// ---------- Color Base 
+
+$c-black                : #02030C;
+
+$c-grey-super-light     : #F4F5FC;
+$c-grey-light           : #999aa9;
+$c-grey                 : #474851;
+
+$c-white                : #ffffff;
+
+$c-green                : #34AD57;
+
+// -------------------- Color Palette -------------------- //
+
+$color-theme: (
+     primary: (
+        'normal'        : $c-primary,
+        'darken'        : darken($c-primary, 10%),
+        'lighten'       : lighten($c-primary, 10%),
+     ),
+
+     secondary: (
+        'normal'        : $c-secondary,
+        'darken'        : darken($c-secondary, 10%),
+        'lighten'       : lighten($c-secondary, 10%),
+     ),
+
+     tertiary: (
+        'normal'        : $c-tertiary,
+        'darken'        : darken($c-tertiary, 10%),
+        'lighten'       : lighten($c-tertiary, 10%),
+     ),
+);
+
+// -------------------- Color Template -------------------- //
+
+// ----- Primary
+
+$c-primary-normal              : map-deep-get($color-theme, primary, 'normal');
+$c-primary-darken              : map-deep-get($color-theme, primary, 'darken');
+$c-primary-lighten             : map-deep-get($color-theme, primary, 'lighten');
+
+// ----- Secondary
+
+$c-secondary-normal            : map-deep-get($color-theme, secondary, 'normal');
+$c-secondary-darken            : map-deep-get($color-theme, secondary, 'darken');
+$c-secondary-lighten           : map-deep-get($color-theme, secondary, 'lighten');
+
+// ----- Tertiary
+
+$c-tertiary-normal             : map-deep-get($color-theme, tertiary, 'normal');
+$c-tertiary-darken             : map-deep-get($color-theme, tertiary, 'darken');
+$c-tertiary-lighten            : map-deep-get($color-theme, tertiary, 'lighten');

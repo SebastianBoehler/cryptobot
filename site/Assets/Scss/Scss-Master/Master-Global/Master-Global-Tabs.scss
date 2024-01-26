@@ -1,0 +1,269 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Tabs -------------------- //
+
+.nav-tab {
+
+    // Primary
+
+    &.primary {
+
+        // Pills
+
+        > .nav-pills {
+            .nav-link {
+                @include py-0;
+                @include px-2;
+
+                @include font-primary-bold;
+                @include small;
+
+                color                   : $c-secondary-normal;
+
+                background-color        : transparent;
+
+                &.active {
+                    color               : $c-white;
+                }
+
+                &:hover, &:focus, &:active {
+                    color               : $c-white;
+                }
+            }
+        }
+    }
+
+    // Secondary
+
+    &.secondary {
+
+        // Pills
+
+        > .nav-pills {
+            .nav-item {
+                @include text-align-center;
+
+                width                   : 50%;
+
+                &:first-child {
+                    border-right        : 1px solid $c-quarter-normal;
+                }
+            }
+
+            .nav-link {
+                @include py-2;
+                @include px-2;
+
+                @include font-primary-book;
+                @include p;
+
+                @include text-transform-uppercase;
+
+                color                   : $c-secondary-normal;
+
+                background-color        : #373A60;
+                border-bottom           : 1px solid $c-quarter-normal;
+                border-radius           : 0;
+
+                &.active {
+                    color               : $c-white;
+
+                    background-color    : transparent;
+                    border-bottom       : 1px solid transparent;
+                }
+
+                &:hover, &:focus, &:active {
+                    color               : $c-white;
+                }
+            }
+        }
+    }
+
+    // Tertiary
+
+    &.tertiary {
+
+        // Pills
+
+        > .nav-pills {
+            .nav-item {
+                @include text-align-center;
+
+                width                   : 25%;
+
+                &:first-child {
+                    border-right        : 1px solid $c-quarter-normal;
+                }
+            }
+
+            .nav-link {
+                @include py-2;
+                @include px-2;
+
+                @include font-primary-bold;
+                @include small;
+
+                color                   : $c-secondary-normal;
+
+                background-color        : #373A60;
+
+                &.active {
+                    color               : $c-white;
+
+                    background-color    : transparent;
+                }
+
+                &:hover, &:focus, &:active {
+                    color               : $c-white;
+                }
+            }
+        }
+    }
+
+    // Quarter
+
+    &.quarter {
+
+        // Pills
+
+        > .nav-pills {
+            @include mb-3;
+
+            .nav-item {
+                @include text-align-center;
+
+                width                   : 50%;
+            }
+
+            .nav-link {
+                @include pt-3;
+                @include pb-2;
+                @include px-2;
+
+                @include font-primary-book;
+                @include p;
+
+                @include text-transform-uppercase;
+
+                color                   : $c-secondary-normal;
+
+                background-color        : transparent;
+                border-bottom           : 2px solid $c-quarter-normal;
+                border-radius           : 0;
+
+                &.active {
+                    color               : $c-white;
+
+                    border-bottom       : 2px solid $c-primary-normal;
+                }
+
+                &:hover, &:focus, &:active {
+                    color               : $c-white;
+                }
+            }
+        }
+    }
+
+    // Quinary
+
+    &.quinary {
+
+        // Pills
+
+        > .nav-pills {
+            .nav-item {
+                @include text-align-center;
+
+                width                   : 25%;
+
+                &:first-child {
+                    border-right        : 1px solid $c-quarter-normal;
+                }
+            }
+
+            .nav-link {
+                @include p-3;
+
+                @include font-primary-book;
+                @include p;
+
+                @include text-transform-uppercase;
+
+                line-height             : 1.2;
+
+                color                   : $c-secondary-normal;
+
+                background-color        : #373A60;
+                border-bottom           : 1px solid $c-quarter-normal;
+                border-radius           : 0;
+
+                &.active {
+                    color               : $c-white;
+
+                    background-color    : transparent;
+                    border-bottom       : 1px solid transparent;
+                }
+
+                &:hover, &:focus, &:active {
+                    color               : $c-white;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+
+            // Pills
+
+            > .nav-pills {
+                @include display-webkit-box;
+
+                @include overflow-y-hidden;
+                @include overflow-x-auto;
+
+                flex-wrap       : nowrap;
+
+                .nav-item {
+                    @include text-align-center;
+
+                    width                   : 50%;
+
+                    &:first-child {
+                        border-right        : 1px solid $c-quarter-normal;
+                    }
+                }
+
+                .nav-link {
+                    @include p-3;
+
+                    @include font-primary-book;
+                    @include p;
+
+                    @include text-transform-uppercase;
+
+                    line-height             : 1.2;
+
+                    color                   : $c-secondary-normal;
+
+                    background-color        : #373A60;
+                    border-bottom           : 1px solid $c-quarter-normal;
+                    border-radius           : 0;
+
+                    &.active {
+                        color               : $c-white;
+
+                        background-color    : transparent;
+                        border-bottom       : 1px solid transparent;
+                    }
+
+                    &:hover, &:focus, &:active {
+                        color               : $c-white;
+                    }
+                }
+            }
+        }
+    }
+}

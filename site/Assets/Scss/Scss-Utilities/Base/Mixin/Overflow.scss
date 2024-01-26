@@ -1,0 +1,89 @@
+
+
+// -------------------- Overflow -------------------- //
+
+@mixin overflow-auto() {
+    overflow: auto;
+}
+
+@mixin overflow-hidden() {
+    overflow: hidden;
+}
+
+@mixin overflow-no-content() {
+    overflow: no-content;
+}
+
+@mixin overflow-no-display() {
+    overflow: no-display;
+}
+
+@mixin overflow-scroll() {
+    overflow: scroll;
+}
+
+@mixin overflow-visible() {
+    overflow: visible;
+}
+
+// -------------------- Overflow X -------------------- //
+
+@mixin overflow-x-auto() {
+    overflow-x: auto;
+}
+
+@mixin overflow-x-hidden() {
+    overflow-x: hidden;
+}
+
+@mixin overflow-x-no-content() {
+    overflow-x: no-content;
+}
+
+@mixin overflow-x-no-display() {
+    overflow-x: no-display;
+}
+
+@mixin overflow-x-scroll() {
+    overflow-x: scroll;
+}
+
+@mixin overflow-x-visible() {
+    overflow-x: visible;
+}
+
+// -------------------- Overflow Y -------------------- //
+
+@mixin overflow-y-auto() {
+    overflow-y: auto;
+}
+
+@mixin overflow-y-hidden() {
+    overflow-y: hidden;
+}
+
+@mixin overflow-y-no-content() {
+    overflow-y: no-content;
+}
+
+@mixin overflow-y-no-display() {
+    overflow-y: no-display;
+}
+
+@mixin overflow-y-scroll() {
+    overflow-y: scroll;
+}
+
+@mixin overflow-y-visible() {
+    overflow-y: visible;
+}
+
+// -------------------- Text Overflow -------------------- //
+
+@mixin text-overflow-clip() {
+    text-overflow: clip;
+}
+
+@mixin text-overflow-ellipsis() {
+    text-overflow: ellipsis;
+}
