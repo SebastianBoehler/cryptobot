@@ -2,54 +2,9 @@
 
 Welcome to the CryptoBot project, an algorithmic trading bot built with JavaScript. This project was initially developed in 2019 and has recently been published in a new repository. The bot uses technical indicators to return trading analysis data and a rule tester to iterate over historical data and test multiple strategies.
 
-## Project Structure
+\*As of 2020, the code in this repository has not been updated. The project transitioned into a maintenance phase and has undergone multiple refactorings in separate repositories to enhance its modularity, making it easier to incorporate new exchanges or custom-built strategies. These updates include the utilization of TypeScript, integration of MongoDB for database management, and employment of workers for various tasks. These changes are not reflected in this repository, but it has been published to showcase the original version of the project.
 
-Here's a visual representation of the project's file structure:
-
-```
-cryptobot/
-├── .dockerignore
-├── .gitattributes
-├── .gitignore
-├── .prettierrc
-├── .vscode/
-│   └── tasks.json
-├── .yarnrc.yml
-├── bun.lockb
-├── dockerfile
-├── ecosystem.config.js
-├── jest.config.js
-├── nodemon.json
-├── package.json
-├── src/
-│   ├── backtester.ts
-│   ├── binance/
-│   │   ├── database.ts
-│   │   └── utils.ts
-│   ├── coinbase/
-│   │   ├── database.ts
-│   │   ├── types.ts
-│   │   └── utils.ts
-│   ├── config/
-│   │   ├── .env.defaults
-│   │   ├── .env.dev
-│   │   ├── .env.prod
-│   │   ├── .env.schema
-│   │   └── config.ts
-│   ├── dydx/
-│   ├── indicators/
-│   ├── kraken/
-│   ├── loosing_strats.json
-│   ├── mongodb/
-│   ├── okx/
-│   ├── orderHelper.ts
-│   ├── server.ts
-│   ├── strategies/
-│   ├── test.ts
-│   ├── tests/
-│   └── utils.ts
-└── tsconfig.json
-```
+-
 
 ## Key Components
 
@@ -58,16 +13,6 @@ cryptobot/
 - **Rule Tester ([`src/backtester.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Fbacktester.ts%22%5D "src/backtester.ts"))**: This module iterates over historical data and tests multiple strategies.
 
 - **Database ([`src/binance/database.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Fbinance%2Fdatabase.ts%22%5D "src/binance/database.ts"), [`src/coinbase/database.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Fcoinbase%2Fdatabase.ts%22%5D "src/coinbase/database.ts"))**: These modules handle the storage of data in JSON files, as there is no database in this project.
-
-## APIs
-
-The project uses various APIs for different functionalities. Here are some of the key APIs:
-
-- **Sub Account Transfer API**: This API is used to manage the transfers between sub-accounts.
-
-- **Grid Trading API**: This API provides various endpoints for grid trading, including placing, amending, and stopping grid algo orders.
-
-- **Earn/Staking API**: This API provides endpoints for earn offers, staking purchase, and staking redeem.
 
 ## Getting Started
 
