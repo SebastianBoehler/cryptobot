@@ -2,9 +2,7 @@
 
 Welcome to the CryptoBot project, an algorithmic trading bot built with JavaScript. This project was initially developed in 2019 and has recently been published in a new repository. The bot uses technical indicators to return trading analysis data and a rule tester to iterate over historical data and test multiple strategies.
 
-\*As of 2020, the code in this repository has not been updated. The project transitioned into a maintenance phase and has undergone multiple refactorings in separate repositories to enhance its modularity, making it easier to incorporate new exchanges or custom-built strategies. These updates include the utilization of TypeScript, integration of MongoDB for database management, and employment of workers for various tasks. These changes are not reflected in this repository, but it has been published to showcase the original version of the project.
-
--
+_As of 2020, the code in this repository has not been updated. The project transitioned into a maintenance phase and has undergone multiple refactorings in separate repositories to enhance its modularity, making it easier to incorporate new exchanges or custom-built strategies. These updates include the utilization of TypeScript, integration of MongoDB for database management, and employment of workers for various tasks. These changes are not reflected in this repository, but it has been published to showcase the original version of the project._
 
 ## Key Components
 
