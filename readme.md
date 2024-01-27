@@ -6,11 +6,11 @@ _As of 2020, the code in this repository has not been updated. The project trans
 
 ## Key Components
 
-- **Technical Indicators ([`src/indicators/`](command:_github.copilot.openRelativePath?%5B%22src%2Findicators%2F%22%5D "src/indicators/"))**: This module returns trading analysis data based on a ticker and timestamp.
+- **Technical Indicators (`indicators.js`)**: This module returns trading analysis data based on a ticker and timestamp.
 
-- **Rule Tester ([`src/backtester.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Fbacktester.ts%22%5D "src/backtester.ts"))**: This module iterates over historical data and tests multiple strategies.
+- **Rule Tester (`ruleTester.js`)**: This module iterates over historical data and tests multiple strategies.
 
-- **Database ([`src/binance/database.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Fbinance%2Fdatabase.ts%22%5D "src/binance/database.ts"), [`src/coinbase/database.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Fcoinbase%2Fdatabase.ts%22%5D "src/coinbase/database.ts"))**: These modules handle the storage of data in JSON files, as there is no database in this project.
+- **Database (`binance.js`, `coinbase.js`)**: These modules handle the storage of data in JSON files, as there is no database in this project.
 
 ## Getting Started
 
